@@ -36,7 +36,6 @@ export default class FullPageDialogExamples extends PureComponent {
 
     if(this.props.contextForCard.length && !mobile) title = `${this.props.contextForCard[0].label}: ${this.props.contextForCard[1].label}`;
     const action = <Button flat label="Назад" onClick={this._closeDialog} />;
-    console.log(this.state.visible);
     return (
       <div>
         <Dialog
