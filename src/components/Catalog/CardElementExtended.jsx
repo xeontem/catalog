@@ -55,7 +55,7 @@ export default class FullPageDialogExamples extends PureComponent {
             fixed
           />
             <Paper className="paper-item-expanded">
-<div itemprop="articleBody">
+<div>
 <h1>Рольставни и роллеты на окна</h1> 
 <p><strong>Роллетные системы</strong> (другими словами - рольставни или роллеты) устанавливаются на дверные или оконные проемы и обеспечивают надежную защиту помещения от посторонних глаз, шума, погодных условий и взлома.</p>
  
@@ -103,49 +103,49 @@ export default class FullPageDialogExamples extends PureComponent {
  
 <h2>Задачи, решаемые роллетными системами «АЛЮТЕХ»</h2>
  
-<table border="0" cellspacing="0" cellpadding="5" width="100%"> 
+<table cellSpacing="0" cellPadding="5" width="100%"> 
   <tbody> 
     <tr> 
-    <td valign="top" ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы" /></td>
-    <td valign="bottom"> 
+    <td  ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы" /></td>
+    <td > 
         <p><strong>Защита от посторонних взглядов</strong> 
          Рольставни на окнах укроют от чужих взглядов, позволят создать комфортную обстановку и сосредоточиться на работе или отдыхе. 
         </p> 
-    </td> <td valign="top" >&nbsp;</td> </tr>
+    </td> <td  >&nbsp;</td> </tr>
    
-    <tr> <td valign="top" ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td valign="bottom"> 
+    <tr> <td  ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td > 
         <p><strong>Защита от шума</strong> 
           <br/>
          Оконные рольставни из пенозаполненных профилей способны ощутимо понизить уровень шума в помещении: это дополнительный плюс для тех, у кого чуткий сон или работа, требующая особой тишины и концентрации. Рассчитать снижение уровня шума можно <strong><a href="/product/rolleti/roll/preimuschestva/energoeffektivnost/" title="Расчет энергоэффективности и шумоизоляции">здесь</a></strong>.</p>
-       </td> <td valign="top" >&nbsp;</td> </tr>
+       </td> <td  >&nbsp;</td> </tr>
    
-    <tr> <td valign="top" ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td valign="bottom"> 
+    <tr> <td  ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td > 
         <p><strong>Защита от непогоды</strong> 
           <br/>
          Достаточно опустить рольставни на окнах, и даже самая ненастная погода перестанет представлять угрозу, а ковры, предметы мебели и шторы не будут выгорать на солнце. </p>
        
         
-       </td> <td valign="top" >&nbsp;</td> </tr>
+       </td> <td  >&nbsp;</td> </tr>
    
-    <tr> <td valign="top" ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td valign="bottom"> 
+    <tr> <td  ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td > 
         <p><strong>Защита от солнца</strong> 
           <br/>
          Оконные рольставни способны сохранить прохладу даже в самые жаркие дни и защитить шторы, мебель, ковровые покрытия от выгорания.</p>
        
         
-       </td> <td valign="top" >&nbsp;</td> </tr>
+       </td> <td  >&nbsp;</td> </tr>
    
-    <tr> <td valign="top" ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td valign="bottom"> 
+    <tr> <td  ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td > 
         <p><strong>Защита от взлома</strong> 
           <br/>
          Окна, расположенные на первых этажах, особенно часто привлекают внимание грабителей. Благодаря высокой прочности роллеты отлично противостоят механическому воздействию, обеспечивают безопасность жильцов и сотрудников здания, а также сохранность имущества.</p>
-       </td> <td valign="top" >&nbsp;</td> </tr>
+       </td> <td  >&nbsp;</td> </tr>
    
-    <tr> <td valign="top" ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td valign="bottom"> 
+    <tr> <td  ><img src="" alt="Оконные и дверные роллетные системы" title="Оконные и дверные роллетные системы"/></td> <td > 
         <p><strong>Экономия энергии</strong> 
           <br/>
          При закрытых роллетах помещение медленнее остывает и меньше нагревается, благодаря чему зимой удается сократить затраты на его прогрев, а летом – на кондиционирование. Рассчитать экономию можно <strong><a href="/product/rolleti/roll/preimuschestva/energoeffektivnost/" title="Расчет энергоэффективности и шумоизоляции">здесь</a></strong>.</p>
-       </td> <td valign="top" >&nbsp;</td> </tr>
+       </td> <td  >&nbsp;</td> </tr>
    </tbody>
  </table>
  
@@ -170,7 +170,7 @@ export default class FullPageDialogExamples extends PureComponent {
 <p>В начале расчета Вы выбираете, какое изделие желаете установить: роллеты или роллетные ворота. Далее вводите размеры проема и тип монтажа, исходя из чего определяется подходящий роллетный профиль. И наконец, подбираете цвет, предпочтительный по дизайну защитный короб, а также наиболее удобный для Вас способ управления.</p>
 <p>Приобретая оконные роллеты у представителей «АЛЮТЕХ», вы можете рассчитывать на оперативную доставку, качественный монтаж и 2 года гарантийного обслуживания изделий</p>
  
-<div center> <a href="http://www.alutech-group.com/client/price/calculator/#shutter/size-tab">Расчет цены</a> </div>
+<div> <a href="http://www.alutech-group.com/client/price/calculator/#shutter/size-tab">Расчет цены</a> </div>
  
 <p>Узнать цену Вашей роллеты можно <a id="bxid_883801" href="http://www.alutech-group.com/client/price/calculator/#shutter/size-tab" >здесь</a>.</p>
  
@@ -200,7 +200,7 @@ export default class FullPageDialogExamples extends PureComponent {
  
 <div> 
   <div> 
-    <div> <iframe width="640" height="385" src="//www.youtube.com/embed/WuCuIDQIxJw?list=PLzzzlyiTnYWTmxUPsEbvCPXOkrKO26SPL" frameborder="0" allowfullscreen=""></iframe> </div>
+    <div> <iframe width="640" height="385" src="//www.youtube.com/embed/WuCuIDQIxJw?list=PLzzzlyiTnYWTmxUPsEbvCPXOkrKO26SPL" frameBorder="0" allowFullScreen=""></iframe> </div>
    </div>
  </div>
  
@@ -227,7 +227,7 @@ export default class FullPageDialogExamples extends PureComponent {
 <br/>
  
 <br/>
-  <p itemprop="author">ALUTECH Group</p>
+  <p>ALUTECH Group</p>
 </div>
           </Paper>
         </Dialog>
