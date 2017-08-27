@@ -1,0 +1,22 @@
+@import '../../globals';
+
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.map {
+	width: 55%;
+	height: 350px;
+}
+
+.contact-about span {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 942px) {
+	.map {
+		width: 100%;
+	}
+}
