@@ -18,13 +18,19 @@ export default class Home extends Component {
     this.state = {
       sliderImages: [img1, img2, img3, img4],
       imageIndex: 0,
-      imgSrc: img1
+      imgSrc: img1,
+      over: [
+        {color: 'aluteh-purple-back', big: '№1', little: 'на рынке', mainBig: 'Лидерство', mainLittle: 'Группа компаний «АЛЮТЕХ» – лидер рынка роллетных систем, ведущий производитель алюминиевых профильных систем и секционных ворот в Восточной Европе. Группа компаний "АЛЮТЕХ" объединяет 5 производственных предприятий и порядка 20 сбытовых компаний в Чехии, России, Беларуси, Украине, Австрии.'},
+        {color: 'aluteh-orange-back', big: '65', little: 'стран мира', mainBig: 'Присутствие', mainLittle: 'Группа компаний «АЛЮТЕХ» – лидер рынка роллетных систем, ведущий производитель алюминиевых профильных систем и секционных ворот в Восточной Европе. Группа компаний "АЛЮТЕХ" объединяет 5 производственных предприятий и порядка 20 сбытовых компаний в Чехии, России, Беларуси, Украине, Австрии.'},
+        {color: 'aluteh-blue-back', big: '136', little: 'тыс. м2 пл. производства', mainBig: 'Технологии', mainLittle: 'Собственное производство ГК «АЛЮТЕХ» включает высокотехнологичные экструзионные линии, современное оборудование для порошковой окраски, крупнейший в СНГ комплекс по анодированию алюминиевых профилей, автоматизированные комплексы литья алюминиевых сплавов, роллформинговые линии, ультрасовременный комплекс по окраске и резке алюминиевой ленты и т.д.'},
+        {color: 'aluteh-green-back', big: 'EC', little: 'соответствие стандартам', mainBig: 'Качество', mainLittle: 'Высокое качество продукции ALUTECH подтверждено сертификатами западноевропейского образца, протоколами испытаний международных компаний и научно-исследовательских центров. Система менеджмента качества на всех предприятиях сертифицирована на соответствие требованиям международного стандарта ISO 9001 в системе TUV CERT.'}
+      ]
     }
   }
 
   showInfo = (e) => {
     if(e.target.dataset.id) {
-      console.log(e.target);
+      // console.log(e.target);
     }
   }
 
@@ -38,7 +44,8 @@ export default class Home extends Component {
     if(imageIndex > this.state.sliderImages.length - 1) imageIndex = 0;
     let imgSrc = this.state.sliderImages[imageIndex];
     setTimeout(() => this.setState({imgSrc, imageIndex}), 3000);
-
+    let over = this.state.over[0];
+    if(this.state.over[imageIndex]) over = this.state.over[imageIndex];
     return (
       <Paper className="paper">
         <section className="header">
@@ -55,8 +62,14 @@ export default class Home extends Component {
           </div>
           <div className="slider-image-placeholder">
             <img className="slider-image" src={imgSrc}/>
-          </div>
-          <div >
+            <div className="info-over-slider">
+              <div className={`info-over-slider-square container ${over.color}`}><span>{over.big}</span><br/>{over.little}</div>
+              <div className="info-over-slider-text container"><span>{over.mainBig}</span>
+                <p>{over.mainLittle}</p>
+              </div>
+            </div>
+          </div>  
+          <div>
             <Button data-id="0" className="slider-button aluteh-purple-back" flat label="Дилерам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
             <Button data-id="1" className="slider-button aluteh-orange-back" flat label="Архитекторам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
             <Button data-id="2" className="slider-button aluteh-blue-back" flat label="Застройщикам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
@@ -104,3 +117,4 @@ export default class Home extends Component {
     );
   }
 }
+        
