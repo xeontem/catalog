@@ -1,7 +1,7 @@
 import React from 'react';
 import FontIcon from 'react-md/lib/FontIcons';
 
-import Home from '../components/Home/Home';
+import Home from '../ConnectedComponents/Home';
 import Catalog from '../components/Catalog/Catalog';
 import Delivery from '../components/Delivery/Delivery';
 import Contact from '../components/Contact/Contact';

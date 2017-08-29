@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import Paper from 'react-md/lib/Papers';
 import Button from 'react-md/lib/Buttons/Button';
 import FontIcon from 'react-md/lib/FontIcons';
@@ -10,7 +8,7 @@ import stripe from '../../slider/stripeBg.gif';
 
 import './home.css';
 
-class Home extends Component {
+export default class Home extends Component {
 
   showInfo = (e) => {
     if(e.target.dataset.id) {
@@ -23,8 +21,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.props);
-    // this.props.nextImg()
     setTimeout(() => this.props.nextImg(), 5000);
     let over = this.props.over[0];
     if(this.props.over[this.props.imageIndex]) over = this.props.over[this.props.imageIndex];
@@ -99,21 +95,3 @@ class Home extends Component {
     );
   }
 }
-
-function mapStateToProps(state) {
-  // console.dir(state);
-  return { 
-    over: state.HomeReducer.get('over'),
-    sliderImages: state.HomeReducer.get('sliderImages'),
-    imageIndex: state.HomeReducer.get('imageIndex'),
-    imgSrc: state.HomeReducer.get('imgSrc')
-  }
-}
-
-function mapActionsToProps(dispatch) {
-    return {
-        nextImg: () => dispatch({type: "NEXT_IMAGE"})
-    };
-}
-
-export default connect(mapStateToProps, mapActionsToProps)(Home);

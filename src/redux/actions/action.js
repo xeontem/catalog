@@ -1,7 +1,7 @@
 
-export function removeToast() {
+export function getToasts() {
     return function(dispatch) {
-        dispatch({type: 'REMOVE'});
+        dispatch({type: "GET"});
     };
 }
 // export function prevMonth() {

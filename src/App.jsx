@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 import Tabs from 'react-md/lib/Tabs/Tabs';
 import Tab from 'react-md/lib/Tabs/Tab';
@@ -10,7 +11,7 @@ import {tabs} from './services/tabs';
 let calcTab = (w) => (ts) => ts.filter(t => w === t.path)[0] || tabs[0];
 const mobile = typeof window.orientation !== 'undefined';
 
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     let tab = calcTab(window.location.pathname)(tabs);
@@ -53,3 +54,11 @@ export default class App extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    state: state
+  }
+}
+
+export default connect(mapStateToProps)(App);

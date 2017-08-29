@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import {removeToast as toastMonthReducer} from '../actions/action';
+import { toastReducer } from './toastMonthReducer';
+import HomeReducer from './HomeReducer';
 
 export default combineReducers({
-    toastMonthReducer
+    // toastReducer,
+    HomeReducer
 });
