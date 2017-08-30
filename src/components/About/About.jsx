@@ -97,7 +97,7 @@ export default class About extends Component {
           <p>Таким образом, «АЛЮТЕХ» – это компания, ориентированная не только на изготовление секционных автоматических ворот, роллет и алюминиевых профильных систем высокого качества, но и на порядочность, надежность, лояльность и внимательность в отношениях с партнерами и клиентами.</p>
                   </div>
         </section>
-        <section className className="container">
+        <section className={!this.props.mobile && 'container'}>
           <h2>Наши Работы</h2>
           {this.props.works.map((work, i) => <Works key={`$work${i}`} work={work} mobile={this.props.mobile} index={i}/>)}
           
