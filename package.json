@@ -17,7 +17,8 @@
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "webfontloader": "^1.6.27"
+    "webfontloader": "^1.6.27",
+    "immutable": "^3.8.1"
   },
   "scripts": {
     "build-css": "node-sass src/ -o src/",
@@ -27,8 +28,5 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "immutable": "^3.8.1"
   }
 }
