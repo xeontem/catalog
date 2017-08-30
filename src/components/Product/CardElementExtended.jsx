@@ -9,29 +9,13 @@ import Paper from 'react-md/lib/Papers';
 const mobile = typeof window.orientation !== 'undefined';
 
 export default class FullPageDialogExamples extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = { 
-      visible: false,
-      pageX: null,
-      pageY: null
-    };
-  }
 
-  componentWillReceiveProps(props) {
-    // this.setState({
-    //   visible: this.props.visible,
-    //   pageX: this.props.pageX,
-    //   pageY: this.props.pageY
-    // });
-  }
-
-  _closeDialog = () => {
-    this.props.catalog.setState({ visible: false, contextForCard: []});
+  _closeDialog = (e) => {
+    this.props.saveButtonHandler.apply(this, [e, {}, {}]);
   }
 
   render() {
-        
+        console.dir(this.props);
     let title = '';
 
     if(this.props.contextForCard.length && !mobile) title = `${this.props.contextForCard[0].label}: ${this.props.contextForCard[1].label}`;

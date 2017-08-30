@@ -1,5 +1,17 @@
 @import '../../globals';
 
+.mobile-view {
+	div {
+		.md-icon-separator {
+			text-align: center;
+		}
+		width: 100%;
+	}
+	.full-width {
+		width: 100%;
+	}
+}
+
 .filter-container {
 	position: relative;
 	width: 20%;

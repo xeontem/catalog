@@ -14,26 +14,13 @@ export default class ItemComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      section: this.props.section,
-      item: this.props.item,
       imgSRC: randomImage({ width: 600, height: 337, section: 'technics' }),
       avatSRC: randomImage()
     }
   }
 
   _openDialog = (e) => {
-    let { pageX, pageY } = e;
-    if (e.changedTouches) {
-      const [touch] = e.changedTouches;
-      pageX = touch.pageX;
-      pageY = touch.pageY;
-    }
-    this.props.catalog.setState({
-      contextForCard: [this.props.section, this.props.item],
-      visible: true,
-      pageX,
-      pageY
-    });
+    this.props.pressDetailed.apply(this, [e, this.props.item, this.props.section]);
   }
 
   render() {
@@ -42,13 +29,13 @@ export default class ItemComponent extends Component {
         <Media>
           <img src={this.state.imgSRC} alt="image" role="presentation" />
           <MediaOverlay>
-            <CardTitle className="card-title" title={this.state.item.label}/>
+            <CardTitle className="card-title" title={this.props.item.label}/>
           </MediaOverlay>
         </Media>
         <CardTitle
           avatar={<Avatar src={this.state.avatSRC} role="presentation" />}
-          title={this.state.item.label}
-          subtitle={this.state.section.label}
+          title={this.props.item.label}
+          subtitle={this.props.section.label}
         />
         <CardActions expander>
           <Button flat label="Подробнее" onClick={this._openDialog} />

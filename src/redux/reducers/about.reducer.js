@@ -7,12 +7,13 @@ import img3 from '../../slider/img3.jpg';
 import img4 from '../../slider/img4.jpg';
 
 import { DATA } from '../../Data/product';
+import { CONST } from '../../Data/constants';
 // import randomText from '../../services/randomText';
 
 // randomText().then(obj => obj.text_out)
 
 let state = {
-  mobile: typeof window.orientation !== 'undefined',
+  mobile: CONST.mobile,
   sliderImages: [img1, img2, img3, img4],
   imageIndex: 0,
   imgSrc: img1,
