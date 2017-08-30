@@ -1,8 +1,7 @@
 import { combineReducers } from 'redux';
-import { toastReducer } from './toastMonthReducer';
-import HomeReducer from './HomeReducer';
+import AboutReducer from './about.reducer';
+import CatalogReducer from './catalog.reducer';
 
 export default combineReducers({
-    // toastReducer,
-    HomeReducer
+    AboutReducer, CatalogReducer
 });

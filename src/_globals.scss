@@ -1,104 +1,101 @@
 // Can't use the nice '~react-md/src/scss/react-md' since this isn't being bundled with webpack
 @import '../node_modules/react-md/src/scss/react-md';
-@include react-md-everything;
-
 
 // Variable overrides
-
-$md-primary-color: $md-blue-500;
-$md-secondary-color: $md-amber-800;
-// $alutech-purple-color: #A6286A;
-// $alutech-orange-color: #F57D1F;
-// $alutech-blue-color: #158FBD;
-// $alutech-green-color: #8AAD1F;
+  $md-primary-color: $md-blue-500;
+  $md-secondary-color: $md-amber-800;
+  // $alutech-purple-color: #A6286A;
+  // $alutech-orange-color: #F57D1F;
+  // $alutech-blue-color: #158FBD;
+  // $alutech-green-color: #8AAD1F;
 
 
 //------------------- background ------------------------
-.aluteh-purple-back {
-	background-color: $md-pink-800 !important; 
-	color: white !important;
-}
+  .aluteh-purple-back {
+  	background-color: $md-pink-800 !important; 
+  	color: white !important;
+  }
 
-.aluteh-orange-back {
-	background-color: $md-amber-800 !important; 
-	color: white !important;
-}
+  .aluteh-orange-back {
+  	background-color: $md-amber-800 !important; 
+  	color: white !important;
+  }
 
-.aluteh-blue-back {
-	background-color: $md-blue-500 !important; 
-	color: white !important;
-}
+  .aluteh-blue-back {
+  	background-color: $md-blue-500 !important; 
+  	color: white !important;
+  }
 
-.aluteh-green-back {
-	background-color: $md-light-green-700 !important; 
-	color: white !important;
-}
+  .aluteh-green-back {
+  	background-color: $md-light-green-700 !important; 
+  	color: white !important;
+  }
 
 //-------------------------- text color --------------------------
 
-.aluteh-purple-text {
-    font-weight: bold;
-	color: $md-pink-800 !important; 
-}
+  .aluteh-purple-text {
+      font-weight: bold;
+  	color: $md-pink-800 !important; 
+  }
 
-.aluteh-orange-text {
-    font-weight: bold;
-	color: $md-amber-800 !important; 
-}
+  .aluteh-orange-text {
+      font-weight: bold;
+  	color: $md-amber-800 !important; 
+  }
 
-.aluteh-blue-text {
-    font-weight: bold;
-	color: $md-blue-500 !important; 
-}
+  .aluteh-blue-text {
+      font-weight: bold;
+  	color: $md-blue-500 !important; 
+  }
 
-.aluteh-green-text {
-    font-weight: bold;
-	color: $md-light-green-700 !important; 
-}
+  .aluteh-green-text {
+      font-weight: bold;
+  	color: $md-light-green-700 !important; 
+  }
 
 //----------------- global classes ---------------------- 
-body {
-    margin: 0;
-    background: $md-blue-grey-200;
-    // background-repeat: round;
-    // background-size: cover;
-    // background-attachment: fixed;
-}
-
-h1, h2 {
-  margin: 15px !important;
-  color: $md-primary-color !important;
-}
-
-.indent {
-	margin: 15px;
-}
-
-.container {
-	padding: 15px;
-}
-
-.paper {
-  width: 100vw;
-  margin-left: -16px;
-  background: white;
-  transition: width 0.5s;
-}
-
-.slider-stripes-container {
-  display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
-  overflow: hidden;
-}
-
-.slider-stripes-container img {
-	width: 25%;
-}
-
-@media screen and (min-width: 1050px) {
-  .paper {
-    width: 95%;
-    margin: 0 auto;
+  body {
+      margin: 0;
+      background: $md-blue-grey-200;
+      // background-repeat: round;
+      // background-size: cover;
+      // background-attachment: fixed;
   }
-}
+
+  h1, h2 {
+    margin: 15px !important;
+    color: $md-primary-color !important;
+  }
+
+  .indent {
+  	margin: 15px;
+  }
+
+  .container {
+  	padding: 15px;
+  }
+
+  .paper {
+    width: 100vw;
+    margin-left: -16px;
+    background: white;
+    transition: width 0.5s;
+  }
+
+  .slider-stripes-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .slider-stripes-container img {
+  	width: 25%;
+  }
+
+  @media screen and (min-width: 1050px) {
+    .paper {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
