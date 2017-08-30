@@ -50,7 +50,6 @@ export default class Product extends Component {
               label={pos.label}
               flat
               buttonChildren={pos.icon}
-              className={!this.props.mobile && 'full-width'}
               contained
               position={MenuButton.Positions.BELOW}
             >{pos.children.map((child, j) =>
