@@ -18,7 +18,7 @@ export default class Works extends Component {
     return (
         <ExpansionList style={{ padding: '10px 0' }}>
           <ExpansionPanel label={this.props.work.label} secondaryLabel={secondaryLabel} saveLabel="подробнее" cancelLabel="свернуть" contentClassName="clear">
-            <Paper className={`image-placeholder ${!this.props.mobile && 'float'}`}><img src={this.props.work.image} alt="image" role="presentation" /></Paper>
+            <Paper className={`image-placeholder ${!mobile && 'float'}`}><img src={this.props.work.image} alt="image" role="presentation" /></Paper>
             <p>{this.props.work.descr}</p>
             
             <div></div>

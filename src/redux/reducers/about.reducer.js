@@ -1,10 +1,10 @@
 import Immutable from 'immutable';
 
 
-import img1 from '../../slider/img1.jpg';
-import img2 from '../../slider/img2.jpg';
-import img3 from '../../slider/img3.jpg';
-import img4 from '../../slider/img4.jpg';
+import img1 from '../../img/about_slider/slide1.png';
+import img2 from '../../img/about_slider/slide2.png';
+import img3 from '../../img/about_slider/slide3.png';
+import img4 from '../../img/about_slider/slide4.png';
 
 import { DATA } from '../../Data/product';
 import { CONST } from '../../Data/constants';
