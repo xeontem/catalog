@@ -3,7 +3,8 @@ import Paper from 'react-md/lib/Papers';
 import Button from 'react-md/lib/Buttons/Button';
 import FontIcon from 'react-md/lib/FontIcons';
 
-import Works from '../Works/Works';
+import ExendedInfoCard from '../../redux/selectors/extendedInfoCard.selector'; 
+import Works from '../../redux/selectors/works.selector';
 import logo from './logo.png';
 import stripe from '../../slider/stripeBg.gif';
 
@@ -99,8 +100,8 @@ export default class About extends Component {
         </section>
         <section className={!this.props.mobile && 'container'}>
           <h2>Наши Работы</h2>
-          {this.props.works.map((work, i) => <Works key={`$work${i}`} work={work} mobile={this.props.mobile} index={i}/>)}
-          
+          {this.props.works.map((work, i) => <Works key={`$work${i}`} work={work}/>)}
+          <ExendedInfoCard/>
         </section>
         <div className="slider-stripes-container">
           <img src={stripe}/><img src={stripe}/><img src={stripe}/><img src={stripe}/>

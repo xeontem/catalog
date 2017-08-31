@@ -4,16 +4,13 @@ import Works from '../../components/Works/Works';
 
 function mapStateToProps(state) {
   return { 
-    // over: state.HomeReducer.get('over'),
-    // sliderImages: state.HomeReducer.get('sliderImages'),
-    // imageIndex: state.HomeReducer.get('imageIndex'),
-    // imgSrc: state.HomeReducer.get('imgSrc')
+  	mobile: state.ExtendedInfoCardReducer.get('mobile')
   }
 }
 
 function mapActionsToProps(dispatch) {
     return {
-        // nextImg: () => dispatch({type: "NEXT_IMAGE"})
+        saveButtonHandler: (e, item, section) => dispatch({type: "TOGGLE_DIALOG", payload: {e, item, section}}) // see ExtendedInfoCardReducer
     };
 }
 

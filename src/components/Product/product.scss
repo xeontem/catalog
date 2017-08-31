@@ -1,6 +1,6 @@
 @import '../../globals';
 
-.mobile-view {
+.nav-mobile-view {
 	div {
 		.md-icon-separator {
 			text-align: center;
@@ -48,36 +48,6 @@
     align-items: start;
 }
 
-.card-item {
-	width: 300px;
-	margin: 15px;
-}
-
-.card-item {
-	.btn--icon {
-		display: none;
-	}
-}
-
-.card-title {
-	h2 {
-		height: 30px;
-    	text-overflow: ellipsis;
-	}
-	padding: 0px !important;
-	max-height: 50px !important;
-}
-
-#fullPageExample h2 {
-	margin: 0px 15px !important;
-	color: white !important;
-}
-
-.paper-item-expanded {
-	margin: 100px 15px 15px;
-	padding: 15px;
-}
-
 @media screen and (max-width: 1050px) {
 
 	.results-container {
@@ -101,16 +71,11 @@
 		margin: 15px auto;
 		max-width: initial;
 	}
-
-	.card-item {
-		width: 45%; 
-	}	
-
 }
 
-@media screen and (max-width: 766px) {
-	.card-item {
-		max-width: initial;
-		width: 90%;
+@media screen and (max-width: 700px) {
+	
+	.results {
+		padding: 0 !important;
 	}
 }

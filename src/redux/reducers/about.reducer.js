@@ -8,6 +8,7 @@ import img4 from '../../img/about_slider/slide4.png';
 
 import { DATA } from '../../Data/product';
 import { CONST } from '../../Data/constants';
+import { works } from '../../Data/works/works';
 // import randomText from '../../services/randomText';
 
 // randomText().then(obj => obj.text_out)
@@ -17,7 +18,7 @@ let state = {
   sliderImages: [img1, img2, img3, img4],
   imageIndex: 0,
   imgSrc: img1,
-  works: DATA.works,
+  works,
   over: DATA.overSlider
 }
 

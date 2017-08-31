@@ -1,0 +1,41 @@
+@import '../../globals';
+
+//------------------------------------------------
+.card-item, .card-item-mobile {
+	width: 300px;
+	margin: 15px;
+	
+	.btn--icon {
+		display: none;
+	}
+}
+
+.card-title {
+	h2 {
+		height: 30px;
+    	text-overflow: ellipsis;
+	}
+	padding: 0px !important;
+	max-height: 50px !important;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+
+	.card-item, .card-item-mobile {
+		width: 45%; 
+	}	
+}
+
+@media screen and (max-width: 700px) {
+	.card-item {
+		max-width: initial;
+		width: 90%;
+	}
+
+	.card-item-mobile {
+		width: 100%;
+		margin: 20px 0;
+	}
+}

@@ -7,9 +7,9 @@ import Tab from 'react-md/lib/Tabs/Tab';
 import TabsContainer from 'react-md/lib/Tabs/TabsContainer';
 
 import {tabs} from './services/tabs';
+import { CONST } from './Data/constants';
 
 let calcTab = (w) => (ts) => ts.filter(t => w === t.path)[0] || tabs[0];
-const mobile = typeof window.orientation !== 'undefined';
 
 class App extends Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class App extends Component {
       <TabsContainer onTabChange={this._handleTabChange} activeTabIndex={activeTabIndex} panelClassName="md-grid"  slideHeightProp="minHeight" colored>
         <Tabs tabId="tab">
           {tabs.map((tab, i) => 
-            <Tab key={i} label={mobile ? '' : tab.label} icon={tab.icon}>
+            <Tab key={i} label={CONST.mobile ? '' : tab.label} icon={tab.icon}>
               <CSSTransitionGroup
                 component="div"
                 className="md-cell md-cell--12"

@@ -4,12 +4,12 @@ import About from '../../components/About/About';
 
 function mapStateToProps(state) {
   return { 
-  	works: state.AboutReducer.get('works'), 
-  	mobile: state.AboutReducer.get('mobile'),
+  	mobile: state.ExtendedInfoCardReducer.get('mobile'),
     over: state.AboutReducer.get('over'),
     sliderImages: state.AboutReducer.get('sliderImages'),
     imageIndex: state.AboutReducer.get('imageIndex'),
-    imgSrc: state.AboutReducer.get('imgSrc')
+    imgSrc: state.AboutReducer.get('imgSrc'),
+    works: state.AboutReducer.get('works') 
   }
 }
 
