@@ -1,3 +1,3 @@
 export const CONST = {
-	mobile: typeof window.orientation == 'undefined'
+	mobile: typeof window.orientation !== 'undefined'
 }
