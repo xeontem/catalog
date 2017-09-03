@@ -27,6 +27,7 @@ export default class ExendedInfoCard extends PureComponent {
     let className = this.props.mobile ? 'paper-item-expanded-mobile' : 'paper-item-expanded';
     let title = `${this.props.contextForCard[0].label}`;
     if(!this.props.mobile && this.props.contextForCard[1].label) title += `: ${this.props.contextForCard[1].label}`;
+    else title = this.props.contextForCard[1].label;
     return (
         <Dialog
           id="expandedInfoCard"
