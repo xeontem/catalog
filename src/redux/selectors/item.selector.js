@@ -1,20 +1,24 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Item from '../../components/Item/Item';
+import Item from '../../components/Item/Item.component';
 
 import randomImage from '../../services/randomImage';
+import { toggleDialog } from '../actions/toggleDialog.action';
+
+const img = randomImage({ width: 600, height: 337, section: 'technics' });
+const avat = randomImage();
 
 function mapStateToProps(state) {
   return { 
   	mobile: state.ExtendedInfoCardReducer.get('mobile'),
-  	imgSRC: randomImage({ width: 600, height: 337, section: 'technics' }),
-    avatSRC: randomImage()
+  	imgSRC: img,
+    avatSRC: avat
   }
 }
 
 function mapActionsToProps(dispatch) {
     return {
-        pressDetailed: (e, item, section) => dispatch({type: "TOGGLE_DIALOG", payload: {e, item, section}}) // see ExtendedInfoCardReducer
+        pressDetailed: bindActionCreators(toggleDialog, dispatch)// see ExtendedInfoCardReducer
     };
 }
 

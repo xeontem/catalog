@@ -14,7 +14,9 @@ export default class Item extends Component {
     mobile: PropTypes.bool.isRequired,
     imgSRC: PropTypes.string,
     avatSRC: PropTypes.string,
-    pressDetailed: PropTypes.func.isRequired
+    pressDetailed: PropTypes.func.isRequired,
+    item: PropTypes.object.isRequired,
+    section: PropTypes.object.isRequired
   };
 
   _openDialog = (e) => this.props.pressDetailed.apply(this, [e, this.props.item, this.props.section]);

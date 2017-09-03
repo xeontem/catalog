@@ -3,6 +3,8 @@ import Slider from 'react-md/lib/Sliders';
 import FontIcon from 'react-md/lib/FontIcons';
 import Paper from 'react-md/lib/Papers';
 
+import './filter.css';
+
 export default class IconExamples extends PureComponent {
   constructor(props) {
     super(props);

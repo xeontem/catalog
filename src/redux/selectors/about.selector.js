@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import About from '../../components/About/About';
+import About from '../../components/About/About.component';
+import { nextImage } from '../actions/nextImage.action';
 
 function mapStateToProps(state) {
   return { 
@@ -15,7 +16,7 @@ function mapStateToProps(state) {
 
 function mapActionsToProps(dispatch) {
     return {
-        nextImg: () => dispatch({type: "NEXT_IMAGE"})
+        nextImg: bindActionCreators(nextImage, dispatch)
     };
 }
 

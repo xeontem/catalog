@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import MenuButton from 'react-md/lib/Menus/MenuButton';
-import ListItem from 'react-md/lib/Lists/ListItem';
+
 import Paper from 'react-md/lib/Papers';
 import FontIcon from 'react-md/lib/FontIcons';
 import Divider from 'react-md/lib/Dividers';
@@ -14,11 +14,12 @@ import Avatar from 'react-md/lib/Avatars';
 import Button from 'react-md/lib/Buttons';
 
 import Item from '../../redux/selectors/item.selector';
-import Filter from '../Filter/Filter';
+import Filter from '../Filter/Filter.component';
 import stripe from '../../slider/stripeBg.gif';
 
 import filterScroll from '../../services/scroll';
 import ExendedInfoCard from '../../redux/selectors/extendedInfoCard.selector'; 
+import NavMenuItem from '../../redux/selectors/navMenuItem.selector';
 import './product.css';
 
 export default class Product extends Component {
@@ -31,6 +32,8 @@ export default class Product extends Component {
     filterScroll('.filter', '.main-content-container');
   }
 
+  navItemsAction = (e) => this.props.toggleDialog.apply(this, [e, this.props.item, this.props.section])
+
   render() {
     return (
       <Paper className="paper">
@@ -38,17 +41,17 @@ export default class Product extends Component {
         <section className="header container">
             <h1>Каталог продукции</h1>
         </section>
-        <div className={`container ${this.props.mobile && 'nav-mobile-view'}`}>
+        <div className={`container ${this.props.mobile && 'nav-mobile'}`}>
           {this.props.navPositions.map((pos, i) => 
             <MenuButton
               id={`button-menu${i}`}
               key={`button-menu${i}`}
               label={pos.label}
-              flat
               buttonChildren={pos.icon}
               contained={this.props.mobile}
-              position={MenuButton.Positions.BELOW}>
-              {pos.children.map((child, j) => <ListItem key={`list${i}${j}`} onClick={this.open} primaryText={child.label}/>)}
+              position={MenuButton.Positions.BELOW}
+              flat>
+              {pos.children.map((item, j) => <NavMenuItem key={`list${i}${j}`} item={item} section={pos}/>)}
             </MenuButton>
             )}
         </div>

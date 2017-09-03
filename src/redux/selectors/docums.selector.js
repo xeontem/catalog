@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Docums from '../../components/Docums/Docums';
+import Docums from '../../components/Docums/Docums.component';
 
 function mapStateToProps(state) {
   return { 

@@ -8,9 +8,18 @@
 }
 
 .paper-item-expanded {
-	margin: 100px 15px 15px;
+	margin: 100px auto;
 	padding: 15px;
 }
+
+@media screen and (min-width: 1000px) {
+	.paper-item-expanded {
+		width: 1000px;
+		margin: 100px auto;
+		padding: 15px;
+	}	
+}
+//----------------------- mobile ---------------------
 
 .paper-item-expanded-mobile {
 	margin: 100px 0;

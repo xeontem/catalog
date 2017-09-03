@@ -13,7 +13,6 @@ export default class Works extends Component {
   _openDialog = (e) => this.props.saveButtonHandler.apply(this, [e, {descrExtended: this.props.work.descrExtended}, {label: this.props.work.label}]);
 
   render() {
-    console.log(this.props.work);
     const { mobile } = this.props;
     let secondaryLabel;
     if (!mobile) secondaryLabel = ['Этого текста не будет видно на моб.тел.'];

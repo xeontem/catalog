@@ -1,7 +1,7 @@
 @import '../../globals';
 
 //------------------------------------------------
-.card-item, .card-item-mobile {
+.card-item {
 	width: 300px;
 	margin: 15px;
 	
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1050px) {
 
-	.card-item, .card-item-mobile {
+	.card-item {
 		width: 45%; 
 	}	
 }
@@ -33,7 +33,27 @@
 		max-width: initial;
 		width: 90%;
 	}
+}
 
+//----------------------------- mobile ------------------------------
+
+.card-item-mobile {
+	width: 300px;
+	margin: 15px;
+	
+	.btn--icon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+
+	.card-item-mobile {
+		width: 45%; 
+	}	
+}
+
+@media screen and (max-width: 700px) {
 	.card-item-mobile {
 		width: 100%;
 		margin: 20px 0;

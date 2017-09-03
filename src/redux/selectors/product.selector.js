@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Product from '../../components/Product/Product';
+import Product from '../../components/Product/Product.component';
+import { toggleDialog } from '../actions/toggleDialog.action';
 
 function mapStateToProps(state) {
   return { 
@@ -11,8 +12,8 @@ function mapStateToProps(state) {
 
 function mapActionsToProps(dispatch) {
   return {
-    toggleDialog: (e, item, section) => dispatch({type: "TOGGLE_DIALOG", payload: {e, item, section}}) // see ExtendedInfoCardReducer
-  };
+    toggleDialog: bindActionCreators(toggleDialog, dispatch)// see ExtendedInfoCardReducer
+	};
 }
 
 export default connect(mapStateToProps, mapActionsToProps)(Product);
