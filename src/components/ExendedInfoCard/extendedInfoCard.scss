@@ -1,6 +1,23 @@
 @import '../../globals';
+@import '../Works/works.scss';
+
 
 #expandedInfoCard { 
+	
+	.float {
+		height: 200px !important;
+	}
+
+	.centering {
+		width: 60% !important;
+		height: initial !important;
+		margin: 15px auto;
+	}
+	
+	h1 {
+		margin: 20px 0 !important;
+	}
+
 	h2 {
 		width: 80%;
 		margin: 0px 15px !important;
@@ -8,7 +25,13 @@
 		overflow: hidden;
 	}
 
-	h3 {
+	p {
+		margin: 0 15px;
+	}
+
+	.heading-3 {
+		margin: 15px;
+	    font-size: 16pt;
 		color: $md-primary-color;
 	}
 	
