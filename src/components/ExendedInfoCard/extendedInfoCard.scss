@@ -1,10 +1,21 @@
 @import '../../globals';
 
-#expandedInfoCard h2 {
-	width: 80%;
-	margin: 0px 15px !important;
-	color: white !important;
-	overflow: hidden;
+#expandedInfoCard { 
+	h2 {
+		width: 80%;
+		margin: 0px 15px !important;
+		color: white !important;
+		overflow: hidden;
+	}
+
+	h3 {
+		color: $md-primary-color;
+	}
+	
+	a {
+		text-decoration: none;
+		color: $md-primary-color;
+	}
 }
 
 .paper-item-expanded {
@@ -12,11 +23,29 @@
 	padding: 15px;
 }
 
+.steps-list {
+	list-style-type: decimal;
+}
+
+.embedded-video {
+	width: 50%;
+	height: 300px;
+	margin: 20px 25%;
+}
+
 @media screen and (min-width: 1000px) {
 	.paper-item-expanded {
 		width: 1000px;
 		margin: 100px auto;
 		padding: 15px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.embedded-video {
+		width: 100%;
+		margin: 0;
 	}	
 }
 //----------------------- mobile ---------------------
