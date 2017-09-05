@@ -12,7 +12,7 @@ export default class NavMenuItem extends Component {
     openDialog: PropTypes.func.isRequired
   };
 
-  _openDialog = (e) => this.props.openDialog.apply(this, [e, this.props.item, this.props.section]);
+  _openDialog = (e) => this.props.openDialog.apply(this, [e, {label: this.props.section.label, label_extended: this.props.item.label, content: this.props.item.descrExtended}]);
 
   render() {
     const className = this.props.mobile ? 'card-item-mobile' : 'card-item';

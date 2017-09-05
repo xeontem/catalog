@@ -15,34 +15,31 @@ import Button from 'react-md/lib/Buttons';
 
 import Item from '../../redux/selectors/item.selector';
 import Filter from '../Filter/Filter.component';
-import stripe from '../../slider/stripeBg.gif';
+import stripe from '../../Data/img/stripeBg.gif';
 
 import filterScroll from '../../services/scroll';
-import ExendedInfoCard from '../../redux/selectors/extendedInfoCard.selector'; 
+
 import NavMenuItem from '../../redux/selectors/navMenuItem.selector';
 import './product.css';
 
-export default class Product extends Component {
+export default class Catalog extends Component {
   static propTypes = {
     mobile: PropTypes.bool.isRequired,
-    navPositions: PropTypes.array.isRequired,
+    CATALOG_PRODUCTS: PropTypes.array.isRequired,
   };
 
   componentDidMount() {
     filterScroll('.filter', '.main-content-container');
   }
 
-  navItemsAction = (e) => this.props.toggleDialog.apply(this, [e, this.props.item, this.props.section])
-
   render() {
     return (
       <Paper className="paper">
-        <ExendedInfoCard/>
         <section className="header container">
             <h1>Каталог продукции</h1>
         </section>
         <div className={`container ${this.props.mobile && 'nav-mobile'}`}>
-          {this.props.navPositions.map((pos, i) => 
+          {this.props.CATALOG_PRODUCTS.map((pos, i) => 
             <MenuButton
               id={`button-menu${i}`}
               key={`button-menu${i}`}
@@ -63,7 +60,7 @@ export default class Product extends Component {
               <Filter/>
           </div>
           <div className="results-container">
-            {this.props.navPositions.map((pos, i) =>  
+            {this.props.CATALOG_PRODUCTS.map((pos, i) =>  
               <Paper key={`cardContainer${i}`} className="results container">
                 <h2 style={{width: '100%'}}>{pos.label}</h2>
                 {pos.children.map((item, j) => 

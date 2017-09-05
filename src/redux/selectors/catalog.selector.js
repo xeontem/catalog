@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Product from '../../components/Product/Product.component';
+import Catalog from '../../components/Catalog/Catalog.component';
 import { toggleDialog } from '../actions/toggleDialog.action';
 
 function mapStateToProps(state) {
   return { 
-  	mobile: state.ExtendedInfoCardReducer.get('mobile'),
-  	navPositions: state.ProductReducer.get('navPositions'),
+  	mobile: state.AboutReducer.get('mobile'),
+  	CATALOG_PRODUCTS: state.CatalogReducer.get('CATALOG_PRODUCTS'),
   }
 }
 
@@ -16,4 +16,4 @@ function mapActionsToProps(dispatch) {
 	};
 }
 
-export default connect(mapStateToProps, mapActionsToProps)(Product);
+export default connect(mapStateToProps, mapActionsToProps)(Catalog);

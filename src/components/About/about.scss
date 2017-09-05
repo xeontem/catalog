@@ -10,8 +10,14 @@
   height: 60px;
 }
 
+.phone-container {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
 .phone-number {
-  margin: 15px;
+  margin: 10px;
   text-decoration: none;
   color: $md-primary-color;
 }
@@ -23,7 +29,6 @@
 .space-around {
   margin: 20px;
 }
-
 
 
 .slider-image-placeholder {

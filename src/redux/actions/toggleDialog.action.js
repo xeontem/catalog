@@ -1,5 +1,10 @@
-export function toggleDialog(e, item, section) {
+export function toggleDialog(e, data) {
 	return function(dispatch) {
-		return dispatch({type: "TOGGLE_DIALOG", payload: {e, item, section}});
+		return dispatch({type: "TOGGLE_DIALOG", payload: {
+			e,
+			label: data.label,
+			label_extended: data.label_extended,
+			content: data.content}
+		});
 	}
 }

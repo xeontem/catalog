@@ -5,14 +5,14 @@ import { toggleDialog } from '../actions/toggleDialog.action';
 
 function mapStateToProps(state) {
   return { 
-  	mobile: state.ExtendedInfoCardReducer.get('mobile')
+  	mobile: state.AboutReducer.get('mobile')
   }
 }
 
 function mapActionsToProps(dispatch) {
-    return {
-        saveButtonHandler: bindActionCreators(toggleDialog, dispatch)// see ExtendedInfoCardReducer
-    };
+  return {
+      saveButtonHandler: bindActionCreators(toggleDialog, dispatch)// see ExtendedInfoCardReducer
+  };
 }
 
 export default connect(mapStateToProps, mapActionsToProps)(Works);

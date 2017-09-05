@@ -6,7 +6,7 @@ import FontIcon from 'react-md/lib/FontIcons';
 import ExendedInfoCard from '../../redux/selectors/extendedInfoCard.selector'; 
 import Works from '../../redux/selectors/works.selector';
 import logo from './logo.png';
-import stripe from '../../slider/stripeBg.gif';
+import stripe from '../../Data/img/stripeBg.gif';
 
 import './about.css';
 
@@ -16,8 +16,8 @@ export default class About extends Component {
     sliderImages: PropTypes.array.isRequired,
     imageIndex: PropTypes.number.isRequired,
     imgSrc: PropTypes.string.isRequired,
-    works: PropTypes.array.isRequired,
-    over: PropTypes.array.isRequired
+    PORTFOLIO: PropTypes.array.isRequired,
+    slider_info: PropTypes.array.isRequired
   };
 
   showInfo = (e) => {
@@ -32,16 +32,17 @@ export default class About extends Component {
 
   render() {
     setTimeout(() => this.props.nextImg(), 5000);
-    let over = this.props.over[0];
-    if(this.props.over[this.props.imageIndex]) over = this.props.over[this.props.imageIndex];
+    let slider_info = this.props.slider_info[0];
+    if(this.props.slider_info[this.props.imageIndex]) slider_info = this.props.slider_info[this.props.imageIndex];
+    
     return (
       <Paper className="paper">
         <section className="header">
           <img className ="space-around logo" src={logo} />
           <div className="space-around">
             <h2>Контактные номера:</h2>
-            <div><FontIcon>phone</FontIcon><a className="phone-number" href="tel:+375259595131">+375 (25) 959 - 51 - 31</ a></div>
-            <div><FontIcon>phone</FontIcon><a className="phone-number" href="tel:+375259595131">+375 (33) 959 - 51 - 31</ a></div>
+            <div className="phone-container"><FontIcon>phone</FontIcon><a className="phone-number" href="tel:+375259595131">+375 (25) 959 - 51 - 31</ a></div>
+            <div className="phone-container"><FontIcon>phone</FontIcon><a className="phone-number" href="tel:+375259595131">+375 (33) 959 - 51 - 31</ a></div>
           </div>
         </section>
         <section className="slider-container">
@@ -51,9 +52,9 @@ export default class About extends Component {
           <div className="slider-image-placeholder">
             <img className="slider-image" src={this.props.imgSrc}/>
             <div className="info-over-slider">
-              <div className={`info-over-slider-square container ${over.color}`}><span>{over.big}</span><br/>{over.little}</div>
-              <div className="info-over-slider-text container"><span>{over.mainBig}</span>
-                <p>{over.mainLittle}</p>
+              <div className={`info-over-slider-square container ${slider_info.color}`}><span>{slider_info.big}</span><br/>{slider_info.little}</div>
+              <div className="info-over-slider-text container"><span>{slider_info.mainBig}</span>
+                <p>{slider_info.mainLittle}</p>
               </div>
             </div>
           </div>  
@@ -100,8 +101,7 @@ export default class About extends Component {
         </section>
         <section className={!this.props.mobile && 'container'}>
           <h2>Наши Работы</h2>
-          {this.props.works.map((work, i) => <Works key={`$work${i}`} work={work}/>)}
-          <ExendedInfoCard/>
+          {this.props.PORTFOLIO.map((work, i) => <Works key={`$work${i}`} work={work}/>)}
         </section>
         <div className="slider-stripes-container">
           <img src={stripe}/><img src={stripe}/><img src={stripe}/><img src={stripe}/>

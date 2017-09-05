@@ -5,45 +5,46 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 import Tabs from 'react-md/lib/Tabs/Tabs';
 import Tab from 'react-md/lib/Tabs/Tab';
 import TabsContainer from 'react-md/lib/Tabs/TabsContainer';
+import ExendedInfoCard from './redux/selectors/extendedInfoCard.selector'; 
 
-import {tabs} from './services/tabs';
+import { TABS } from './Data/tabs';
 import { CONST } from './Data/constants';
 
-let calcTab = (w) => (ts) => ts.filter(t => w === t.path)[0] || tabs[0];
+let calcTab = w => ts => ts.filter(t => w === t.path)[0] || TABS[0];
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
-    let tab = calcTab(window.location.pathname)(tabs);
+    let tab = calcTab(window.location.pathname)(TABS);
     this.state = {
       path: tab.path,
-      activeTabIndex: tabs.indexOf(tab),
-      tabs
+      activeTabIndex: TABS.indexOf(tab),
+      TABS
     };
   }
 
   _handleTabChange = (activeTabIndex) => {
-    let path = this.state.tabs[activeTabIndex].path;
+    let path = this.state.TABS[activeTabIndex].path;
     this.setState({ activeTabIndex, path });
   }
 
   render() {
-    let { activeTabIndex, path, tabs } = this.state;
+    let { activeTabIndex, path, TABS } = this.state;
     let searchBoxPath = window.location.pathname;
     return (
       <div>
       {searchBoxPath !== path && <Redirect to={path}/>}
+      <ExendedInfoCard/>
       <TabsContainer onTabChange={this._handleTabChange} activeTabIndex={activeTabIndex} panelClassName="md-grid"  slideHeightProp="minHeight" colored>
         <Tabs tabId="tab">
-          {tabs.map((tab, i) => 
+          {TABS.map((tab, i) => 
             <Tab key={i} label={CONST.mobile ? '' : tab.label} icon={tab.icon}>
               <CSSTransitionGroup
                 component="div"
                 className="md-cell md-cell--12"
                 transitionName="md-cross-fade"
                 transitionEnterTimeout={300}
-                transitionLeave={false}
-              >
+                transitionLeave={false}>
                 {tab.children}
               </CSSTransitionGroup>
             </Tab>
@@ -54,11 +55,3 @@ class App extends Component {
     );
   }
 }
-
-function mapStateToProps(state) {
-  return {
-    state: state
-  }
-}
-
-export default connect(mapStateToProps)(App);

@@ -19,7 +19,7 @@ export default class Item extends Component {
     section: PropTypes.object.isRequired
   };
 
-  _openDialog = (e) => this.props.pressDetailed.apply(this, [e, this.props.item, this.props.section]);
+  _openDialog = (e) => this.props.pressDetailed(e, {label: this.props.section.label, label_extended: this.props.item.label, content: this.props.item.descrExtended})
 
   render() {
     const className = this.props.mobile ? 'card-item-mobile' : 'card-item';

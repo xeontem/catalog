@@ -10,7 +10,7 @@ const avat = randomImage();
 
 function mapStateToProps(state) {
   return { 
-  	mobile: state.ExtendedInfoCardReducer.get('mobile'),
+  	mobile: state.AboutReducer.get('mobile'),
   	imgSRC: img,
     avatSRC: avat
   }

@@ -1,17 +1,17 @@
 import Immutable from 'immutable';
 
 import { CONST } from '../../Data/constants';
-import { navPositions } from '../../Data/navPositions';
+import { CATALOG_PRODUCTS } from '../../Data/catalog_products/catalog.products';
 
 let state = {
   
-  navPositions,
+  CATALOG_PRODUCTS
   
 }
 
 const initialState = Immutable.Map(state);
 
-export default function ProductReducer(state = initialState, action) {
+export default function CatalogReducer(state = initialState, action) {
   switch(action.type){
   	case "NOTHING": {
      //  let { pageX, pageY } = action.payload.e;

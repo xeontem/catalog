@@ -1,17 +1,15 @@
 import Immutable from 'immutable';
 
-import { DATA } from '../../Data/product';
 import { CONST } from '../../Data/constants';
 // import randomText from '../../services/randomText';
 
 // randomText().then(obj => obj.text_out)
 
 let state = {
-  mobile: CONST.mobile,
   visible: false,
   pageX: null,
   pageY: null,
-  contextForCard: [{}, {label: ''}]
+  card_data: {label: '', label_item: '', content: ''}
 }
 
 const initialState = Immutable.Map(state);
@@ -26,8 +24,12 @@ export default function ExtendedInfoCardReducer(state = initialState, action) {
         pageY = touch.pageY;
       }
       let newState = state
-        //                     [navPositions.parent,  navPositions.children]
-        .set('contextForCard', [action.payload.section, action.payload.item])
+        //                     [CATALOG_PRODUCTS.parent,  CATALOG_PRODUCTS.children]
+        .set('card_data', {
+          label: action.payload.label,
+          label_extended: action.payload.label_extended,
+          content: action.payload.content
+        })
         .set('visible', !state.get('visible'))
         .set('pageX', pageX)
         .set('pageY', pageY)

@@ -5,12 +5,12 @@ import { nextImage } from '../actions/nextImage.action';
 
 function mapStateToProps(state) {
   return { 
-  	mobile: state.ExtendedInfoCardReducer.get('mobile'),
-    over: state.AboutReducer.get('over'),
+  	mobile: state.AboutReducer.get('mobile'),
+    slider_info: state.AboutReducer.get('slider_info'),
     sliderImages: state.AboutReducer.get('sliderImages'),
     imageIndex: state.AboutReducer.get('imageIndex'),
     imgSrc: state.AboutReducer.get('imgSrc'),
-    works: state.AboutReducer.get('works') 
+    PORTFOLIO: state.AboutReducer.get('PORTFOLIO') 
   }
 }
 

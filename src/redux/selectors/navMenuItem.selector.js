@@ -6,7 +6,7 @@ import { toggleDialog } from '../actions/toggleDialog.action';
 
 function mapStateToProps(state) {
   return { 
-  	mobile: state.ExtendedInfoCardReducer.get('mobile')
+  	mobile: state.AboutReducer.get('mobile')
   }
 }
 

@@ -1,25 +1,19 @@
 import Immutable from 'immutable';
 
-
-import img1 from '../../img/about_slider/slide1.png';
-import img2 from '../../img/about_slider/slide2.png';
-import img3 from '../../img/about_slider/slide3.png';
-import img4 from '../../img/about_slider/slide4.png';
-
-import { DATA } from '../../Data/product';
+import { ABOUT_SLIDER } from '../../Data/about.slider/about.slider';
 import { CONST } from '../../Data/constants';
-import { works } from '../../Data/works/works';
+import { PORTFOLIO } from '../../Data/portfolio/portfolio';
 // import randomText from '../../services/randomText';
 
 // randomText().then(obj => obj.text_out)
 
 let state = {
   mobile: CONST.mobile,
-  sliderImages: [img1, img2, img3, img4],
+  sliderImages: ABOUT_SLIDER.images,
   imageIndex: 0,
-  imgSrc: img1,
-  works,
-  over: DATA.overSlider
+  imgSrc: ABOUT_SLIDER.images[0],
+  PORTFOLIO,
+  slider_info: ABOUT_SLIDER.slider_info
 }
 
 const initialState = Immutable.Map(state);

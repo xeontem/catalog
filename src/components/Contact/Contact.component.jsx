@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Paper from 'react-md/lib/Papers';
-import stripe from '../../slider/stripeBg.gif';
+import stripe from '../../Data/img/stripeBg.gif';
 import './contact.css';
 
 export default class Contact extends Component {
