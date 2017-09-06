@@ -26,7 +26,7 @@ export default class Item extends Component {
     return (
       <Card className={className}>
         <Media>
-          <img src={this.props.imgSRC} alt="image" role="presentation" />
+          <img src={this.props.item.img} alt="image" role="presentation" />
           <MediaOverlay>
             <CardTitle className="card-title" title={this.props.item.label}/>
           </MediaOverlay>

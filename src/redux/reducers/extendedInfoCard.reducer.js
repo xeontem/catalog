@@ -24,7 +24,6 @@ export default function ExtendedInfoCardReducer(state = initialState, action) {
         pageY = touch.pageY;
       }
       let newState = state
-        //                     [CATALOG_PRODUCTS.parent,  CATALOG_PRODUCTS.children]
         .set('card_data', {
           label: action.payload.label,
           label_extended: action.payload.label_extended,
