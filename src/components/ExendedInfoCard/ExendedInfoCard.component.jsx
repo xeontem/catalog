@@ -21,7 +21,7 @@ export default class ExendedInfoCard extends PureComponent {
 
   action = () => <Button flat label="Назад" onClick={this._closeDialog}/>
   
-  _closeDialog = (e) => this.props.saveButtonHandler(e, {label: '', label_extended: '', content: ''})
+  _closeDialog = (e) => this.props.saveButtonHandler(e, {visible: false})
 
   render() {
     let className = this.props.mobile ? 'paper-item-expanded-mobile' : 'paper-item-expanded';
@@ -31,6 +31,7 @@ export default class ExendedInfoCard extends PureComponent {
     return (
         <Dialog
           id="expandedInfoCard"
+          dialogClassName="card-background"
           visible={this.props.visible}
           pageX={this.props.pageX}
           pageY={this.props.pageY}

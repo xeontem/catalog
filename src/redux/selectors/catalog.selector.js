@@ -7,6 +7,7 @@ function mapStateToProps(state) {
   return { 
   	mobile: state.AboutReducer.get('mobile'),
   	CATALOG_PRODUCTS: state.CatalogReducer.get('CATALOG_PRODUCTS'),
+  	card_data: state.ExtendedInfoCardReducer.get('card_data')
   }
 }
 

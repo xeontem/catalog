@@ -1,15 +1,13 @@
 import Immutable from 'immutable';
 
 import { CONST } from '../../Data/constants';
-// import randomText from '../../services/randomText';
-
-// randomText().then(obj => obj.text_out)
+import { CATALOG_PRODUCTS } from '../../Data/catalog_products/catalog.products';
 
 let state = {
   visible: false,
   pageX: null,
   pageY: null,
-  card_data: {label: '', label_item: '', content: ''}
+  card_data: {label: CATALOG_PRODUCTS[0].label, label_item: CATALOG_PRODUCTS[0].children[0].label, content: CATALOG_PRODUCTS[0].children[0].descrExtended}
 }
 
 const initialState = Immutable.Map(state);
@@ -25,13 +23,12 @@ export default function ExtendedInfoCardReducer(state = initialState, action) {
       }
       let newState = state
         .set('card_data', {
-          label: action.payload.label,
-          label_extended: action.payload.label_extended,
-          content: action.payload.content
-        })
-        .set('visible', !state.get('visible'))
+          label: action.payload.label || CATALOG_PRODUCTS[0].label,
+          label_item: action.payload.label_extended || CATALOG_PRODUCTS[0].children[0].label,
+          content: action.payload.content || CATALOG_PRODUCTS[0].children[0].descrExtended})
+        .set('visible', action.payload.visible)
         .set('pageX', pageX)
-        .set('pageY', pageY)
+        .set('pageY', pageY);
       return newState;
     }
     default: return state;

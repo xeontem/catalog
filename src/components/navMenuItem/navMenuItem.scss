@@ -1,1 +1,33 @@
 @import '../../globals';
+
+.menu-button {
+	width: 100%;
+	button {
+		width: 100%;
+		overflow: hidden;
+	}
+	span {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 540px) and (max-width: 1280px) {
+	.menu-button {
+		width: initial;
+		button {
+			width: initial;
+		}
+	}
+}
+
+//----------------- mobile ----------------------
+.menu-button-mobile {
+	width: 100%;
+	button {
+		width: 100%;
+		overflow: hidden;
+	}
+	span {
+		text-align: center;
+	}
+}

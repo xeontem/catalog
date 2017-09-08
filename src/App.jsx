@@ -10,6 +10,7 @@ import ExendedInfoCard from './redux/selectors/extendedInfoCard.selector';
 import { TABS } from './Data/tabs';
 import { CONST } from './Data/constants';
 
+// calcTab:: String -> Array -> Object
 let calcTab = w => ts => ts.filter(t => w === t.path)[0] || TABS[0];
 
 export default class App extends Component {
@@ -35,13 +36,13 @@ export default class App extends Component {
       <div>
       {searchBoxPath !== path && <Redirect to={path}/>}
       <ExendedInfoCard/>
-      <TabsContainer onTabChange={this._handleTabChange} activeTabIndex={activeTabIndex} panelClassName="md-grid"  slideHeightProp="minHeight" colored>
+      <TabsContainer onTabChange={this._handleTabChange}activeTabIndex={activeTabIndex} panelClassName="md-grid"  slideHeightProp="minHeight" colored>
         <Tabs tabId="tab">
           {TABS.map((tab, i) => 
             <Tab key={i} label={CONST.mobile ? '' : tab.label} icon={tab.icon}>
               <CSSTransitionGroup
                 component="div"
-                className="md-cell md-cell--12"
+                className="md-cell md-cell--12 myClass"
                 transitionName="md-cross-fade"
                 transitionEnterTimeout={300}
                 transitionLeave={false}>

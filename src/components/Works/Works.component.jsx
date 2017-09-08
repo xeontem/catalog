@@ -10,7 +10,7 @@ export default class Works extends Component {
     saveButtonHandler: PropTypes.func.isRequired
   };
 
-  _openDialog = (e) => this.props.saveButtonHandler(e, {label: this.props.work.label, label_extended: '', content: this.props.work.descrExtended})
+  _openDialog = (e) => this.props.saveButtonHandler(e, {label: this.props.work.label, label_extended: '', content: this.props.work.descrExtended, visible: true})
 
 
   render() {

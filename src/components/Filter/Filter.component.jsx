@@ -12,30 +12,27 @@ export default class IconExamples extends PureComponent {
 
   render() {
     return (
-      <Paper className="filter">
+      <div>
         <h2>Фильтр</h2>
-          <Slider
-            id="mediaVolume"
-            label="Цена"
-            leftIcon={<FontIcon>attach_money</FontIcon>}
-            defaultValue={5}
-            max={12}
-          />
-          <Slider
-            id="alarmVolume"
-            label="Значение"
-            leftIcon={<FontIcon>home</FontIcon>}
-            defaultValue={8}
-            max={12}
-          />
-          <Slider
-            id="ringVolume"
-            label="Значение"
-            leftIcon={<FontIcon>vibration</FontIcon>}
-            defaultValue={10}
-            max={12}
-          />
-      </Paper>
+        <Slider
+          id="mediaVolume"
+          label="Цена"
+          leftIcon={<FontIcon>attach_money</FontIcon>}
+          defaultValue={5}
+          max={12}/>
+        <Slider
+          id="alarmVolume"
+          label="Значение"
+          leftIcon={<FontIcon>home</FontIcon>}
+          defaultValue={8}
+          max={12}/>
+        <Slider
+          id="ringVolume"
+          label="Значение"
+          leftIcon={<FontIcon>vibration</FontIcon>}
+          defaultValue={10}
+          max={12}/>
+      </div>
     );
   }
 }

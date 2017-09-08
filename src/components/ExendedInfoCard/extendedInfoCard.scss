@@ -2,25 +2,39 @@
 @import '../Works/works.scss';
 
 
-#expandedInfoCard { 
-	
-	.float {
-		height: 200px !important;
-	}
+// #expandedInfoCard { 
+
+  .card-background {
+  	background: $md-blue-grey-200 !important;
+  }
 
 	.centering {
-		width: 60% !important;
-		height: initial !important;
-		margin: 15px auto;
+		margin: 20px 0;
+		padding: 5px;
+	  width: 100%;
 	}
-	
+
+	.image-placeholder {
+		overflow: hidden;
+		float: right;
+		margin: 20px 0;
+		padding: 5px;
+	  width: 100%;
+	  img {
+	  	width: 100%;
+	  }
+	}
+
+	.clear {
+		overflow: auto;
+	}
 
 	.imgs-container {
 		.img {
 			margin: 10px 0;
 			min-width: 300px;
 			width: 30%;
-		    height: 200px;
+		  height: 200px;
 		}
 		display: flex;
 		flex-wrap: wrap;
@@ -55,8 +69,8 @@
 		text-decoration: none;
 		color: $md-primary-color;
 	}
-	background: $md-blue-grey-200;
-}
+	// 
+// }
 
 .paper-item-expanded {
 	margin: 100px auto;
@@ -69,9 +83,9 @@
 }
 
 .embedded-video {
-	width: 50%;
+	width: 75%;
 	height: 300px;
-	margin: 20px 25%;
+	margin: 20px 11%;
 }
 
 .stripes-container {
@@ -93,6 +107,17 @@
 		width: 100%;
 		margin: 0;
 	}	
+}
+
+@media screen and (min-width: 540px) {
+	.image-placeholder {
+		margin: 20px !important;
+		padding: 5px !important;
+	  width: initial !important;
+	  img {
+	  	width: 300px;
+	  }
+	}
 }
 //----------------------- mobile ---------------------
 
