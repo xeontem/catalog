@@ -12,7 +12,6 @@ import './item.css';
 export default class Item extends Component {
   static propTypes = {
     mobile: PropTypes.bool.isRequired,
-    imgSRC: PropTypes.string,
     avatSRC: PropTypes.string,
     pressDetailed: PropTypes.func.isRequired,
     item: PropTypes.object.isRequired,
