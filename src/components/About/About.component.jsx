@@ -59,10 +59,10 @@ export default class About extends Component {
             </div>
           </div>  
           <div>
-            <Button data-id="0" className="slider-button aluteh-purple-back" flat label="Дилерам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
-            <Button data-id="1" className="slider-button aluteh-orange-back" flat label="Архитекторам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
-            <Button data-id="2" className="slider-button aluteh-blue-back" flat label="Застройщикам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
-            <Button data-id="3" className="slider-button aluteh-green-back" flat label="Покупателям" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
+            <Button data-id="0" className="slider-button aluteh-purple-back" flat children="Дилерам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
+            <Button data-id="1" className="slider-button aluteh-orange-back" flat children="Архитекторам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
+            <Button data-id="2" className="slider-button aluteh-blue-back" flat children="Застройщикам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
+            <Button data-id="3" className="slider-button aluteh-green-back" flat children="Покупателям" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
           </div>
         </section>
         <section className className="container">

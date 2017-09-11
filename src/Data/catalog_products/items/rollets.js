@@ -1,11 +1,21 @@
 import React from 'react';
 import Paper from 'react-md/lib/Papers';
+import { ExpansionList, ExpansionPanel } from 'react-md/lib/ExpansionPanels';
+
+import Colours from '../../../components/Colours/Colours';
+import ProfileTypes from '../../../components/ProfileTypes/ProfileTypes';
 import img from '../../img/rollets/pic_4.jpg';
 import {CONST} from '../../constants';
 
 export const rollets_short =  'Роллетные системы (другими словами - рольставни или роллеты) устанавливаются на дверные или оконные проемы и обеспечивают надежную защиту помещения от посторонних глаз, шума, погодных условий и взлома.';
 
-export const rollets_extended = 
+const CustomFooter = () => (
+  <footer style={{ padding: 24 }}>
+    <p>This is some custom stuff I want in the footer.</p>
+  </footer>
+);
+
+export const rollets_extended =
 			<div className="clear">
 			  <h1>Рольставни и роллеты на окна</h1> 
             <p>Роллетные системы (другими словами - рольставни или роллеты) устанавливаются на дверные или оконные проемы и обеспечивают надежную защиту помещения от посторонних глаз, шума, погодных условий и взлома.</p>
@@ -14,10 +24,98 @@ export const rollets_extended =
             <p>Наша компания заботится о красоте, безопасности и уюте миллионов домов, офисов и других объектов по всему миру, предлагая эстетичные и надежные рольставни – специальные защитные конструкции из алюминиевых профилей, предназначенные для окон и дверей.</p>
             <p>На протяжении всего времени, мы занимаемся производством и сборкой роллетных систем для окон и дверей. Текущий ассортимент продукции насчитывает свыше 10 000 наименований роллетных комплектующих различного конструктива и цветовой гаммы.</p>
             <p>Среди изготавливаемой продукции – экструдированные и пенозаполненные профили, концевые профили и направляющие шины, защитные короба и боковые крышки, элементы подвеса и управления роллетой, а также многое-многое другое. </p>
-            <p>В настоящее время мы предлагаем роллеты высокого качества в разных ценовых сегментах для любой группы клиентов. Это классические роллеты серии Classic и бюджетный вариант – роллеты серии Economy. Обе серии имеют как общие преимущества, так и отличительные характеристики.</p>
-          <p className="heading-3">Разница между Classic и Economy</p>   
-          <p className="heading-3">Цветовые решения</p>   
-          <p className="heading-3">Типы профиля</p>  
+            <p>В настоящее время мы предлагаем роллеты высокого качества в разных ценовых сегментах для любой группы клиентов. Это классические роллеты серии <span><strong className="aluteh-blue-text">Classic</strong></span> и бюджетный вариант – роллеты серии <span><strong className="aluteh-blue-text">Economy</strong></span>. Обе серии имеют как общие преимущества, так и отличительные характеристики.</p>
+          <ExpansionList className="md-cell md-cell--12">
+            <ExpansionPanel label="Разница между Classic и Economy" footer={null}>
+              <table> 
+                    <tbody> 
+                        <tr>
+                            <td>
+                                <b>Толщина алюминиевой профильной ленты</b> 
+                                <ul> 
+                                    <li><p>
+                                        <strong><em>Classic:</em></strong><br/>
+                                        <strong>0,28-0,49 мм</strong> – на <strong>25-30% </strong>толще, чем в серии <em>Economy</em>
+                                    </p></li>
+                                    <li><p>
+                                        <strong><em>Economy:</em></strong><br/>
+                                        <strong>0,23-0,28 мм</strong>
+                                    </p></li>
+                                </ul>
+                            </td>
+                            <td><img src="/images/rollpd/21.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Толщина стенок шин </b> 
+                                <ul> 
+                                    <li><p>
+                                        <strong><em>Classic:</em></strong><br/>
+                                        <strong>≥ 1 мм</strong> – на 11% больше, чем в серии <em>Economy</em>
+                                    </p></li>
+                                    <li><p>
+                                        <strong><em>Economy:</em></strong><br/>
+                                        <strong>≥ 0,9 мм</strong>
+                                    </p></li>
+                                </ul>
+                            </td>
+                            <td><img src="/images/rollpd/22.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Ветровая устойчивость </b> 
+                                <ul> 
+                                    <li><p>
+                                        <strong><em>Classic:</em></strong><br/>
+                                        Роллеты подходят для любых ветровых районов по СНиП 2.01.07 с ветровой нагрузкой до <strong>850 Па</strong> (соответствует скорости ветра до <strong>135 км/ч</strong>) и закрывают <strong>до 18%</strong> большие проемы, чем серия <em>Economy</em>
+                                    </p></li>
+                                    <li><p>
+                                        <strong><em>Economy:</em></strong><br/>
+                                        Роллеты закрывают проемы до <strong>15%</strong> меньшие, чем серия <em>Classic</em>
+                                    </p></li>
+                                </ul>
+                            </td>
+                            <td><img src="/images/rollpd/23.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td><b>Однородность цвета и цветовая гамма </b> 
+                                <ul> 
+                                    <li><p>
+                                        <strong><em>Classic:</em></strong><br/>
+                                        Цветовое различие <strong>∆Е* ˂ 1</strong> неуловимо человеческим глазом<br/>
+                                        Цветовая гамма – более<strong> 30</strong> цветов.
+                                    </p></li>
+                                    <li><p>
+                                        <strong><em>Economy:</em></strong><br/>
+                                        Допустимое цветовое различие <strong>∆Е ˂ 1-1,5</strong> может определить только эксперт<br/>
+                                        Цветовая гамма – <strong>5</strong> наиболее популярных цветов
+                                    </p></li>
+                                </ul>
+                            </td>
+                            <td><img src="/images/rollpd/24.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Соответствие стандартам </b> 
+                                <ul> 
+                                    <li><p>
+                                        <strong><em>Classic:</em></strong><br/>
+                                        Роллеты сертифицированы на безопасность и ветровую устойчивость по ГОСТ Р 52502-2012**, СТБ 51.2.03-2000, EN 13659 и <strong>соответствуют более чем 20 национальным и международным стандартам</strong>.
+                                    </p></li>
+                                    <li><p>
+                                        <strong><em>Economy:</em></strong><br/>
+                                        Роллеты изготавливаются согласно ТУ
+                                    </p></li>
+                                </ul>
+                            </td>
+                            <td><img src="/images/rollpd/25.jpg"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ExpansionPanel>
+            <ExpansionPanel label="Цветовые решения" footer={null}><Colours/></ExpansionPanel>
+            <ExpansionPanel label="Типы профиля" footer={null}><ProfileTypes/></ExpansionPanel>
+          </ExpansionList>
           <p className="heading-3">Основные конструктивные элементы оконной роллеты:</p>
             <p><strong>1.	Роллетное полотно. </strong></p>
             <p>Может состоять из пенозаполненных или экструдированных (повышенной жесткости) профилей. Текущий ассортимент включает 7 видов профилей роликовой прокатки (типоразмерный ряд от 36мм до 55мм) и 3 вида экструдированных профиля (42мм, 44мм, 55мм). </p>

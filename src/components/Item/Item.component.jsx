@@ -35,7 +35,7 @@ export default class Item extends Component {
           title={this.props.item.label}
           subtitle={this.props.section.label}/>
         <CardActions expander>
-          <Button flat label="Подробнее" onClick={this._openDialog} />
+          <Button flat children="Подробнее" onClick={this._openDialog} />
         </CardActions>
         <CardText expandable>
           <p>{this.props.item.descrShort}</p>

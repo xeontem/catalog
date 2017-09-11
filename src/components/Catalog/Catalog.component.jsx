@@ -3,6 +3,8 @@ import Paper from 'react-md/lib/Papers';
 import Item from '../../redux/selectors/item.selector';
 import stripe from '../../Data/img/stripeBg.gif';
 import NavMenuItem from '../../redux/selectors/navMenuItem.selector';
+import { ExpansionList, ExpansionPanel } from 'react-md/lib/ExpansionPanels';
+
 import Filter from '../Filter/Filter.component';
 import makeScrollable from '../../services/scroll';
 import './catalog.css';
@@ -36,7 +38,7 @@ export default class Catalog extends Component {
             </Paper>
           </div>
           <div id="expandedInfoCard" className="results-container">
-              {this.props.card_data.content}
+            {this.props.card_data.content}
           </div>
         </main>
         <div className="slider-stripes-container">

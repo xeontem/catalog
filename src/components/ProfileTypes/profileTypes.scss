@@ -1,0 +1,21 @@
+
+
+#profileTypes {
+
+	.wrapper {
+		padding: 10px;
+    margin: 10px 0;
+	}
+
+	.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+		
+		img {
+			margin: 10px 0;
+			height: 180px;
+		}
+	}
+
+}

@@ -4,6 +4,7 @@
   "private": true,
   "description": "An example usage of react-md and create-react-app.",
   "dependencies": {
+    "1.1.0": "^1.0.0",
     "immutable": "^3.8.1",
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
@@ -12,7 +13,7 @@
     "react-addons-css-transition-group": "^15.5.2",
     "react-addons-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
-    "react-md": "*",
+    "react-md": "^1.1.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.1.1",
     "react-scripts": "0.9.5",

@@ -59,7 +59,7 @@ export const CATALOG_PRODUCTS = [
         ]
       }, 
       {
-        label: 'Перегрузочное оборудование',
+        label: 'Перегрузочное оборудов',
         icon: "archive",
         children: [
   	    	{img: rolets_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Герметизаторы проема"},

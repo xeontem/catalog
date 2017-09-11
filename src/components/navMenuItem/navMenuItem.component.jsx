@@ -26,9 +26,9 @@ export default class NavMenuItem extends Component {
           key={`button-menu${i}`}
           menuClassName={className}
           label={pos.label}
-          buttonChildren={pos.icon}
-          contained={true}
+          children={pos.icon}
           position={MenuButton.Positions.BELOW}
+          fullWidth={true}
           flat>
           {pos.children.map((item, j) => <ListItem key={`list${i}${j}`} onClick={this._openDialog.bind(this, {pos, item})} primaryText={item.label}/>)}
         </MenuButton>

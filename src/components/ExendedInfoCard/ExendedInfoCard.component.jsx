@@ -19,7 +19,7 @@ export default class ExendedInfoCard extends PureComponent {
     saveButtonHandler: PropTypes.func.isRequired
   };
 
-  action = () => <Button flat label="Назад" onClick={this._closeDialog}/>
+  action = () => <Button flat children="Назад" onClick={this._closeDialog}/>
   
   _closeDialog = (e) => this.props.saveButtonHandler(e, {visible: false})
 

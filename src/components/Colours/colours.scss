@@ -1,0 +1,49 @@
+@import '../../globals';
+
+#colours {
+	overflow: hidden;
+
+	.upper-header th {
+		padding: 0 15px;
+		text-align: center;
+	}
+	
+	th, td {
+		padding-right: 5px;
+	}
+	
+	#column10 {
+		min-width: 135px;
+	}
+	
+	th:nth-child(2), td:nth-child(2),
+	th:nth-child(7), td:nth-child(7),
+	th:nth-child(9), td:nth-child(9),
+	th:nth-child(12), td:nth-child(12),
+	th:nth-child(15), td:nth-child(15) {
+		position: relative;
+		padding-right: 15px;
+	}
+
+	.divider::after {
+		content: '';
+    position: absolute;
+    width: 1px;
+    height: 1160px;
+    background: rgba(0, 0, 0, 0.54);
+    right: 2px;
+    top: 0px;
+	}
+	
+	th:nth-child(3), td:nth-child(3),
+	th:nth-child(8), td:nth-child(8),
+	th:nth-child(10), td:nth-child(10),
+	th:nth-child(13), td:nth-child(13),
+	th:nth-child(16), td:nth-child(16) {
+		padding-left: 15px;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+}
