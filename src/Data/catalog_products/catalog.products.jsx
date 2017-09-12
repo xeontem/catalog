@@ -20,8 +20,7 @@ export const CATALOG_PRODUCTS = [
         icon: "format_align_justify",
          
         children: [
-        	{img: rolets_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Роллеты"},
-          {img: rolstav_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Рольставни"},
+        	{img: rolets_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Роллеты/Рольставни"},
         	{img: rolvorot_img, descrExtended: ITEM_DESCR.rollet_gates_extended, descrShort: ITEM_DESCR.rollet_gates_short, label: "Роллетные ворота"},
         	{img: rolresh_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Роллетные решетки"},
         	{img: avtvorot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Автоматика для роллет"},
@@ -59,7 +58,7 @@ export const CATALOG_PRODUCTS = [
         ]
       }, 
       {
-        label: 'Перегрузочное оборудов',
+        label: 'Перегрузочное оборудование',
         icon: "archive",
         children: [
   	    	{img: rolets_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Герметизаторы проема"},

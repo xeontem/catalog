@@ -18,25 +18,18 @@ export default class Item extends Component {
     section: PropTypes.object.isRequired
   };
 
-  _openDialog = (e) => this.props.pressDetailed(e, {label: this.props.section.label, label_extended: this.props.item.label, content: this.props.item.descrExtended})
+  _openDialog = (e) => this.props.pressDetailed(e, {label: this.props.section.label, label_extended: this.props.item.label, content: this.props.item.descrExtended, visible: true})
 
   render() {
     const className = this.props.mobile ? 'card-item-mobile' : 'card-item';
     return (
-      <Card className={className}>
+      <Card className={className} onClick={this._openDialog}>
         <Media>
           <img src={this.props.item.img} alt="image" role="presentation" />
           <MediaOverlay>
             <CardTitle className="card-title" title={this.props.item.label}/>
           </MediaOverlay>
         </Media>
-        <CardTitle
-          avatar={<Avatar src={this.props.avatSRC} role="presentation" />}
-          title={this.props.item.label}
-          subtitle={this.props.section.label}/>
-        <CardActions expander>
-          <Button flat children="Подробнее" onClick={this._openDialog} />
-        </CardActions>
         <CardText expandable>
           <p>{this.props.item.descrShort}</p>
         </CardText>

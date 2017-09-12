@@ -14,7 +14,7 @@ export default class NavMenuItem extends Component {
     openDialog: PropTypes.func.isRequired
   };
 
-  _openDialog = (data, e) => this.props.openDialog(e, {label: data.pos.label, label_extended: data.item.label, content: data.item.descrExtended});
+  _openDialog = (data, e) => this.props.openDialog(e, {label: data.pos.label, label_extended: data.item.label, content: data.item.descrExtended, visible: true});
 
   render() {
     const className = this.props.mobile ? 'menu-button-mobile' : 'menu-button';
@@ -28,7 +28,7 @@ export default class NavMenuItem extends Component {
           label={pos.label}
           children={pos.icon}
           position={MenuButton.Positions.BELOW}
-          fullWidth={true}
+          fullWidth={this.props.mobile}
           flat>
           {pos.children.map((item, j) => <ListItem key={`list${i}${j}`} onClick={this._openDialog.bind(this, {pos, item})} primaryText={item.label}/>)}
         </MenuButton>

@@ -19,7 +19,7 @@ export default class Works extends Component {
     if (!mobile) secondaryLabel = ['Этого текста не будет видно на моб.тел.'];
 
     return (
-        <ExpansionList style={{ padding: '10px 0' }}>
+        <ExpansionList id="works" style={{ padding: '10px 0' }}>
           <ExpansionPanel
             label={this.props.work.label}
             secondaryLabel={secondaryLabel}

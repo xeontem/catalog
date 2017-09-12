@@ -4,6 +4,7 @@
 // Variable overrides
   $md-primary-color: $md-blue-500;
   $md-secondary-color: $md-amber-800;
+  $md-background-color: $md-blue-grey-200;
   // $alutech-purple-color: #A6286A;
   // $alutech-orange-color: #F57D1F;
   // $alutech-blue-color: #158FBD;
@@ -76,10 +77,11 @@
   }
 
   .paper {
-    width: 100vw;
-    margin-left: -16px;
+    width: 90vw;
+    margin: 0 auto;
+    // margin-left: -16px;
     background: white;
-    transition: width 0.5s;
+    // transition: width 0.5s;
   }
 
   .slider-stripes-container {
@@ -90,12 +92,11 @@
   }
 
   .slider-stripes-container img {
-  	width: 25%;
+    width: 25%;
   }
 
   @media screen and (min-width: 1050px) {
     .paper {
-      width: 1000px;
-      margin: 0 auto;
+      // width: 1000px;
     }
   }

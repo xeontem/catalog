@@ -26,7 +26,7 @@ export const rollets_extended =
             <p>Среди изготавливаемой продукции – экструдированные и пенозаполненные профили, концевые профили и направляющие шины, защитные короба и боковые крышки, элементы подвеса и управления роллетой, а также многое-многое другое. </p>
             <p>В настоящее время мы предлагаем роллеты высокого качества в разных ценовых сегментах для любой группы клиентов. Это классические роллеты серии <span><strong className="aluteh-blue-text">Classic</strong></span> и бюджетный вариант – роллеты серии <span><strong className="aluteh-blue-text">Economy</strong></span>. Обе серии имеют как общие преимущества, так и отличительные характеристики.</p>
           <ExpansionList className="md-cell md-cell--12">
-            <ExpansionPanel label="Разница между Classic и Economy" footer={null}>
+            <ExpansionPanel label={<h3>Разница между Classic и Economy</h3>} footer={null}>
               <table> 
                     <tbody> 
                         <tr>
@@ -113,8 +113,8 @@ export const rollets_extended =
                     </tbody>
                 </table>
             </ExpansionPanel>
-            <ExpansionPanel label="Цветовые решения" footer={null}><Colours/></ExpansionPanel>
-            <ExpansionPanel label="Типы профиля" footer={null}><ProfileTypes/></ExpansionPanel>
+            <ExpansionPanel label={<h3>Цветовые решения</h3>} footer={null}><Colours/></ExpansionPanel>
+            <ExpansionPanel label={<h3>Типы профиля</h3>} footer={null}><ProfileTypes/></ExpansionPanel>
           </ExpansionList>
           <p className="heading-3">Основные конструктивные элементы оконной роллеты:</p>
             <p><strong>1.	Роллетное полотно. </strong></p>

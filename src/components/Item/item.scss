@@ -10,8 +10,14 @@
 	}
 }
 
+.card-item:hover {
+    box-shadow: 0 0 10px 3px $md-background-color;
+    cursor: pointer;
+}
+
 .card-title {
 	h2 {
+		width: 100%;
 		height: 30px;
     	text-overflow: ellipsis;
 	}

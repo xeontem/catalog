@@ -7,12 +7,12 @@
 	align-items: start;
 }
 
-.results-container {
-	padding: 15px;
-	width: calc(75% - 30px);
-}
+// .results-container {
+// 	padding: 15px;
+// }
 
 .results {
+	width: calc(80% - 60px);
 	margin: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
 
 .slide-container {
 	position: relative;
-	width: 25%;
+	width: 20%;
 	margin: 15px;
 	
 }
@@ -30,20 +30,17 @@
 .left-menu-container {
     position: absolute;
     width: 100%;
-    padding: 15px;
 }
 
 @media screen and (max-width: 1050px) {
 
-	.results-container {
-		width: 90%;
-	}	
-
 	.results {
+		width: 90%;
 		margin: 15px auto;
 	}
 
-		.left-menu-container {
+	.left-menu-container {
+    	padding: 15px;
 		position: initial;
 	}	
 

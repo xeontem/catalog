@@ -1,13 +1,10 @@
 @import '../../globals';
-@import '../Works/works.scss';
 
 
-// #expandedInfoCard { 
+#expandedInfoCard { 
 
-  .card-background {
-  	background: $md-blue-grey-200 !important;
-  }
-
+	background: $md-background-color !important;
+  
 	.centering {
 		margin: 20px 0;
 		padding: 5px;
@@ -69,8 +66,7 @@
 		text-decoration: none;
 		color: $md-primary-color;
 	}
-	// 
-// }
+}
 
 .paper-item-expanded {
 	margin: 100px auto;
@@ -94,29 +90,36 @@
 }
 
 @media screen and (min-width: 1000px) {
-	.paper-item-expanded {
-		width: 1000px;
-		margin: 100px auto;
-		padding: 15px;
+	#expandedInfoCard { 
+		.paper-item-expanded {
+			width: 1000px;
+			margin: 100px auto;
+			padding: 15px;
+		}
 	}
 
 }
 
 @media screen and (max-width: 800px) {
-	.embedded-video {
-		width: 100%;
-		margin: 0;
-	}	
+	#expandedInfoCard { 
+		.embedded-video {
+			width: 100%;
+			margin: 0;
+		}	
+	}
 }
 
 @media screen and (min-width: 540px) {
-	.image-placeholder {
-		margin: 20px !important;
-		padding: 5px !important;
-	  width: initial !important;
-	  img {
-	  	width: 300px;
-	  }
+	#expandedInfoCard { 
+		.image-placeholder {
+			float: right;
+			margin: 20px !important;
+			padding: 5px !important;
+		  width: initial !important;
+		  img {
+		  	width: 300px;
+		  }
+		}
 	}
 }
 //----------------------- mobile ---------------------

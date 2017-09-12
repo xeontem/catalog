@@ -37,9 +37,11 @@ export default class Catalog extends Component {
               <NavMenuItem/>
             </Paper>
           </div>
-          <div id="expandedInfoCard" className="results-container">
-            {this.props.card_data.content}
-          </div>
+          <Paper className="results container">
+            {this.props.CATALOG_PRODUCTS.map((pos, i) => pos.children.map((item, j) => 
+                  <Item key={`card${i}${j}`} item={item} section={pos}/>)
+            )}
+          </Paper>
         </main>
         <div className="slider-stripes-container">
           <img src={stripe}/><img src={stripe}/><img src={stripe}/><img src={stripe}/>
@@ -48,10 +50,7 @@ export default class Catalog extends Component {
     );
   }
 }
-            // {this.props.CATALOG_PRODUCTS.map((pos, i) =>  
-            //   <Paper key={`cardContainer${i}`} className="results container">
-            //     <h2 style={{width: '100%'}}>{pos.label}</h2>
-            //     {pos.children.map((item, j) => 
-            //       <Item key={`card${i}${j}`} item={item} section={pos}/>)}
-            //   </Paper>
-            // )}
+          // <div id="expandedInfoCard" className="results-container">
+          //   {this.props.card_data.content}
+          // </div>
+          // 
