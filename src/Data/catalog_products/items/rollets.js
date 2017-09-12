@@ -15,6 +15,9 @@ const CustomFooter = () => (
   </footer>
 );
 
+const style = CONST.mobile ? {width: '100%'} : {};
+const listClass = CONST.mobile ? 'expansion-list-mobile' : '';
+
 export const rollets_extended =
 			<div className="clear">
 			  <h1>Рольставни и роллеты на окна</h1> 
@@ -25,8 +28,9 @@ export const rollets_extended =
             <p>На протяжении всего времени, мы занимаемся производством и сборкой роллетных систем для окон и дверей. Текущий ассортимент продукции насчитывает свыше 10 000 наименований роллетных комплектующих различного конструктива и цветовой гаммы.</p>
             <p>Среди изготавливаемой продукции – экструдированные и пенозаполненные профили, концевые профили и направляющие шины, защитные короба и боковые крышки, элементы подвеса и управления роллетой, а также многое-многое другое. </p>
             <p>В настоящее время мы предлагаем роллеты высокого качества в разных ценовых сегментах для любой группы клиентов. Это классические роллеты серии <span><strong className="aluteh-blue-text">Classic</strong></span> и бюджетный вариант – роллеты серии <span><strong className="aluteh-blue-text">Economy</strong></span>. Обе серии имеют как общие преимущества, так и отличительные характеристики.</p>
-          <ExpansionList className="md-cell md-cell--12">
-            <ExpansionPanel label={<h3>Разница между Classic и Economy</h3>} footer={null}>
+          <br/>
+          <ExpansionList className={'md-cell md-cell--12 ' + listClass}>
+            <ExpansionPanel headerClassName="panel-header" label="Разница между Classic и Economy" style={style} footer={null}>
               <table> 
                     <tbody> 
                         <tr>
@@ -113,8 +117,8 @@ export const rollets_extended =
                     </tbody>
                 </table>
             </ExpansionPanel>
-            <ExpansionPanel label={<h3>Цветовые решения</h3>} footer={null}><Colours/></ExpansionPanel>
-            <ExpansionPanel label={<h3>Типы профиля</h3>} footer={null}><ProfileTypes/></ExpansionPanel>
+            <ExpansionPanel headerClassName="panel-header" label="Цветовые решения" style={style} footer={null}><Colours/></ExpansionPanel>
+            <ExpansionPanel headerClassName="panel-header" label="Типы профиля" style={style} footer={null}><ProfileTypes/></ExpansionPanel>
           </ExpansionList>
           <p className="heading-3">Основные конструктивные элементы оконной роллеты:</p>
             <p><strong>1.	Роллетное полотно. </strong></p>

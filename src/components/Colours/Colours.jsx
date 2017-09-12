@@ -7,8 +7,8 @@ import TableBody from 'react-md/lib/DataTables/TableBody';
 import TableRow from 'react-md/lib/DataTables/TableRow';
 import TableColumn from 'react-md/lib/DataTables/TableColumn';
 import TablePagination from 'react-md/lib/DataTables/TablePagination';
-// import loremIpsum from 'lorem-ipsum';
 
+import { CONST } from '../../Data/constants';
 import './colours.css';
 
 const coloursImgs = 'http://www.alutech-group.com/content/images/product/roll/sec_rollingshutter/color/table/img/';
@@ -63,10 +63,11 @@ export default class Colours extends PureComponent {
   };
 
   render() {
+    const wrapperClass = CONST.mobile ? 'wrapper-mobile' : 'wrapper';
     const { slicedData } = this.state;
     const rowsPerPageLabel = this.props.mobile ? 'Rows' : 'Rows per page';
     return (
-      <DataTable id="colours" baseId="colPag" plain>
+      <DataTable id="colours" className={wrapperClass} baseId="colPag" plain>
         <TableHeader className="upper-header">
           <TableRow children={this.state.theader.upper.map((title, i) => <TableColumn key={`header2${i}`} colSpan={colSpans(i)}>{title}</TableColumn>)}>
           </TableRow>

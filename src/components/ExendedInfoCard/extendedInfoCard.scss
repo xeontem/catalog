@@ -66,6 +66,10 @@
 		text-decoration: none;
 		color: $md-primary-color;
 	}
+
+	.panel-header > div {
+		color: $md-primary-color;
+	}
 }
 
 .paper-item-expanded {
@@ -123,9 +127,16 @@
 	}
 }
 //----------------------- mobile ---------------------
+#expandedInfoCard { 
+	
+	.expansion-list-mobile {
+		margin: 0;
+		width: 100%;
+	}
 
-.paper-item-expanded-mobile {
-	margin: 100px 0;
-	padding: 15px;
-	background: white;
+	.paper-item-expanded-mobile {
+		margin: 100px 0;
+		padding: 15px 0;
+		background: white;
+	}
 }

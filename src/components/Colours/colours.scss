@@ -2,6 +2,8 @@
 
 #colours {
 	overflow: hidden;
+	padding: 10px;
+   	margin: 10px 0;
 
 	.upper-header th {
 		padding: 0 15px;
@@ -46,4 +48,11 @@
 	.text-center {
 		text-align: center;
 	}
+}
+
+//---------------------- mobile ------------------------------
+.wrapper-mobile {
+	width: calc(100% + 47px);
+    padding: 10px;
+    margin: 10px -23px;
 }
