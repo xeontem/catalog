@@ -29,12 +29,12 @@
 
 	.divider::after {
 		content: '';
-    position: absolute;
-    width: 1px;
-    height: 1000vh;
-    background: #ccc;
-    right: 2px;
-    top: 0px;
+	    position: absolute;
+	    width: 1px;
+	    height: 1000vh;
+	    background: #ccc;
+	    right: 2px;
+	    top: 0px;
 	}
 	
 	th:nth-child(3), td:nth-child(3),

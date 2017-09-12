@@ -15,7 +15,7 @@ export default class ExendedInfoCard extends PureComponent {
     visible: PropTypes.bool.isRequired,
     pageX: PropTypes.number,
     pageY: PropTypes.number,
-    card_data: PropTypes.object.isRequired,// {label, label_extended, content}
+    card_data: PropTypes.object.isRequired,// {label, label_item, content}
     saveButtonHandler: PropTypes.func.isRequired
   };
 
@@ -25,9 +25,9 @@ export default class ExendedInfoCard extends PureComponent {
 
   render() {
     let className = this.props.mobile ? 'paper-item-expanded-mobile' : 'paper-item-expanded';
-    
+    console.log(this.props.card_data.label_item);
     let title = this.props.card_data.label;
-    if(!this.props.mobile && this.props.card_data.label_extended) title += `: ${this.props.card_data.label_extended}`;
+    if(!this.props.mobile && this.props.card_data.label_item) title += `: ${this.props.card_data.label_item}`;
     return (
         <Dialog
           id="expandedInfoCard"

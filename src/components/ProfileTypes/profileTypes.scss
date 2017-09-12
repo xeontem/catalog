@@ -20,9 +20,20 @@
 
 }
 
+@media screen and (max-width: 600px) {
+	#profileTypes {
+		.image-wrapper {
+			img {
+				width: 100%;
+				height: 25%;
+			}
+		}
+	}
+}
+
 //----------------- mobile --------------------------
 #profileTypes {
-	
+
 	.wrapper-mobile {
 		width: calc(100% + 47px);
 	    padding: 10px;

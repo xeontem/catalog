@@ -4,11 +4,15 @@
 #expandedInfoCard { 
 
 	background: $md-background-color !important;
-  
+  	
+	.clear {
+		clear: both;
+	}
+
 	.centering {
 		margin: 20px 0;
 		padding: 5px;
-	  width: 100%;
+	    width: 100%;
 	}
 
 	.image-placeholder {
@@ -16,14 +20,18 @@
 		float: right;
 		margin: 20px 0;
 		padding: 5px;
-	  width: 100%;
-	  img {
-	  	width: 100%;
-	  }
+	    width: 100%;
+		img {
+		    width: 100%;
+		}
 	}
 
-	.clear {
-		overflow: auto;
+	.flex-list {
+		display: flex;
+		flex-wrap: wrap;
+		div {
+			width: 100%;
+		}
 	}
 
 	.imgs-container {
@@ -123,6 +131,12 @@
 		  img {
 		  	width: 300px;
 		  }
+		}
+
+		.flex-list {
+			div {
+				width: 50%;
+			}
 		}
 	}
 }

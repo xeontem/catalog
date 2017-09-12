@@ -22,7 +22,7 @@ export const CATALOG_PRODUCTS = [
         children: [
         	{img: rolets_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Роллеты/Рольставни"},
         	{img: rolvorot_img, descrExtended: ITEM_DESCR.rollet_gates_extended, descrShort: ITEM_DESCR.rollet_gates_short, label: "Роллетные ворота"},
-        	{img: rolresh_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Роллетные решетки"},
+        	{img: rolresh_img, descrExtended: ITEM_DESCR.rollet_reshetki_extended, descrShort: ITEM_DESCR.rollet_reshetki_short, label: "Роллетные решетки"},
         	{img: avtvorot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Автоматика для роллет"},
           {img: rolprot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Противовзломные роллеты"}
         ]
