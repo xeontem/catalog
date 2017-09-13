@@ -1,0 +1,20 @@
+#vorota_garaznye {
+	.sandwich-images {
+		display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+	}
+
+	.bottom-images {
+		overflow: hidden;
+		float: right;
+		margin: 20px 0;
+		padding: 5px;
+		img {
+			width: 190px;
+		}
+	}
+	.clear {
+		clear: both;
+	}
+}

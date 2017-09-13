@@ -15,11 +15,11 @@ import vjezdvorot_img from '../img/vjezdvorot.jpg';
 import { ITEM_DESCR } from './catalog.items.descriptions';
 
 export const CATALOG_PRODUCTS = [
-        	{img: garvorot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Гаражные ворота"},
-        	{img: promvorot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Промышленные ворота"},
+        	{img: garvorot_img, descrExtended: ITEM_DESCR.vorota_garaznye_extended, descrShort: ITEM_DESCR.vorota_garaznye_short, label: "Гаражные ворота"},
+        	{img: promvorot_img, descrExtended: ITEM_DESCR.promyshlen_vorota_extended, descrShort: ITEM_DESCR.promyshlen_vorota_short, label: "Промышленные ворота"},
           {img: rolets_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Роллеты/Рольставни"},
           {img: rolresh_img, descrExtended: ITEM_DESCR.rollet_reshetki_extended, descrShort: ITEM_DESCR.rollet_reshetki_short, label: "Роллетные решетки"},
-          {img: vjezdvorot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Въездные ворота"},
+          {img: vjezdvorot_img, descrExtended: ITEM_DESCR.vezdnye_vorota_extended, descrShort: ITEM_DESCR.vezdnye_vorota_short, label: "Въездные ворота"},
           {img: panoramvorot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Комплектующие"},
           {img: avtvorot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Автоматика"},
           {img: rolprot_img, descrExtended: ITEM_DESCR.rollets_extended, descrShort: ITEM_DESCR.rollets_short, label: "Панорамные ворота"},
