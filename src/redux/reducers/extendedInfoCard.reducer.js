@@ -7,7 +7,7 @@ let state = {
   visible: false,
   pageX: null,
   pageY: null,
-  card_data: {label: CATALOG_PRODUCTS[0].label, label_item: CATALOG_PRODUCTS[0].children[0].label, content: CATALOG_PRODUCTS[0].children[0].descrExtended}
+  card_data: {label: CATALOG_PRODUCTS[0].label, content: CATALOG_PRODUCTS[0].descrExtended}
 }
 
 const initialState = Immutable.Map(state);
@@ -24,8 +24,7 @@ export default function ExtendedInfoCardReducer(state = initialState, action) {
       let newState = state
         .set('card_data', {
           label: action.payload.label || CATALOG_PRODUCTS[0].label,
-          label_item: action.payload.label_extended || CATALOG_PRODUCTS[0].children[0].label,
-          content: action.payload.content || CATALOG_PRODUCTS[0].children[0].descrExtended})
+          content: action.payload.content || CATALOG_PRODUCTS[0].descrExtended})
         .set('visible', action.payload.visible)
         .set('pageX', pageX)
         .set('pageY', pageY);

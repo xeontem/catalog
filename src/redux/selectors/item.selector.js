@@ -6,12 +6,11 @@ import randomImage from '../../services/randomImage';
 import { toggleDialog } from '../actions/toggleDialog.action';
 
 // const img = randomImage({ width: 600, height: 337, section: 'technics' });
-const avat = randomImage();
+// const avat = randomImage();
 
 function mapStateToProps(state) {
   return { 
   	mobile: state.AboutReducer.get('mobile'),
-    avatSRC: avat
   }
 }
 

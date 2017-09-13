@@ -38,8 +38,8 @@ export default class Catalog extends Component {
             </Paper>
           </div>
           <Paper className="results container">
-            {this.props.CATALOG_PRODUCTS.map((pos, i) => pos.children.map((item, j) => 
-                  <Item key={`card${i}${j}`} item={item} section={pos}/>)
+            {this.props.CATALOG_PRODUCTS.map((item, i) =>  
+                  <Item key={`card${i}`} item={item}/>
             )}
           </Paper>
         </main>

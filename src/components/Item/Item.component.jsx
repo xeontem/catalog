@@ -14,11 +14,10 @@ export default class Item extends Component {
     mobile: PropTypes.bool.isRequired,
     avatSRC: PropTypes.string,
     pressDetailed: PropTypes.func.isRequired,
-    item: PropTypes.object.isRequired,
-    section: PropTypes.object.isRequired
+    item: PropTypes.object.isRequired
   };
 
-  _openDialog = (e) => this.props.pressDetailed(e, {label: this.props.section.label, label_extended: this.props.item.label, content: this.props.item.descrExtended, visible: true})
+  _openDialog = (e) => this.props.pressDetailed(e, {label: this.props.item.label, content: this.props.item.descrExtended, visible: true})
 
   render() {
     const className = this.props.mobile ? 'card-item-mobile' : 'card-item';
