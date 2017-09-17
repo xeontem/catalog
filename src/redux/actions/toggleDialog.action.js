@@ -1,6 +1,5 @@
 export function toggleDialog(e, data) {
 	return function(dispatch) {
-		console.log(data);
 		return dispatch({type: "TOGGLE_DIALOG", payload: {
 			e,
 			label: data.label,

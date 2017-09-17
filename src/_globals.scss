@@ -34,6 +34,10 @@
 
 //-------------------------- text color --------------------------
 
+  .primary-colored-text {
+    color: $md-primary-color;
+  }
+
   .aluteh-purple-text {
       font-weight: bold;
   	color: $md-pink-800 !important; 

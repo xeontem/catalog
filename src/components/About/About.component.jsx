@@ -22,7 +22,6 @@ export default class About extends Component {
 
   showInfo = (e) => {
     if(e.target.dataset.id) {
-      // console.log(e.target);
     }
   }
 

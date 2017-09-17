@@ -6,6 +6,7 @@ import Colours from '../../../components/Colours/Colours';
 import ProfileTypes from '../../../components/ProfileTypes/ProfileTypes';
 import img from '../../img/rollets/pic_4.jpg';
 import {CONST} from '../../constants';
+import './rollets.css';
 
 export const rollets_short =  'Роллетные системы (другими словами - рольставни или роллеты) устанавливаются на дверные или оконные проемы и обеспечивают надежную защиту помещения от посторонних глаз, шума, погодных условий и взлома.';
 
@@ -15,11 +16,12 @@ const CustomFooter = () => (
   </footer>
 );
 
+const flashData = CONST.origin + "/content/images/product/roll/sec_rollingshutter/full_desc/main_v3.swf"
 const style = CONST.mobile ? {width: '100%'} : {};
 const listClass = CONST.mobile ? 'expansion-list-mobile' : '';
 
 export const rollets_extended =
-			<div>
+			<div id="rollets">
 			  <h1>Рольставни и роллеты на окна</h1> 
             <p>Роллетные системы (другими словами - рольставни или роллеты) устанавливаются на дверные или оконные проемы и обеспечивают надежную защиту помещения от посторонних глаз, шума, погодных условий и взлома.</p>
           <p className="heading-3">Защитные роллеты от </p>
@@ -30,6 +32,12 @@ export const rollets_extended =
             <p>В настоящее время мы предлагаем роллеты высокого качества в разных ценовых сегментах для любой группы клиентов. Это классические роллеты серии <span><strong className="aluteh-blue-text">Classic</strong></span> и бюджетный вариант – роллеты серии <span><strong className="aluteh-blue-text">Economy</strong></span>. Обе серии имеют как общие преимущества, так и отличительные характеристики.</p>
           <br/>
           <ExpansionList className={'md-cell md-cell--12 clear ' + listClass}>
+            <ExpansionPanel headerClassName="panel-header" label="Конструкция роллеты" style={style} footer={null}>
+                <div className="flash_wrapper">
+                    <object type="application/x-shockwave-flash" id="flash" name="flash" data={flashData} width="100%" height="400">
+                    <param name="allowScriptAccess" value="always"/></object>
+                </div>
+            </ExpansionPanel>
             <ExpansionPanel headerClassName="panel-header" label="Разница между Classic и Economy" style={style} footer={null}>
               <table> 
                     <tbody> 

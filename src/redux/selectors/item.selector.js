@@ -4,6 +4,7 @@ import Item from '../../components/Item/Item.component';
 
 import randomImage from '../../services/randomImage';
 import { toggleDialog } from '../actions/toggleDialog.action';
+import { toggleCatalogContent } from '../actions/toggleCatalogContent.action';
 
 // const img = randomImage({ width: 600, height: 337, section: 'technics' });
 // const avat = randomImage();
@@ -16,7 +17,7 @@ function mapStateToProps(state) {
 
 function mapActionsToProps(dispatch) {
     return {
-        pressDetailed: bindActionCreators(toggleDialog, dispatch)// see ExtendedInfoCardReducer
+        pressDetailed: bindActionCreators(toggleCatalogContent, dispatch)// see ExtendedInfoCardReducer
     };
 }
 

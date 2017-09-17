@@ -25,7 +25,6 @@ export default class ExendedInfoCard extends PureComponent {
 
   render() {
     let className = this.props.mobile ? 'paper-item-expanded-mobile' : 'paper-item-expanded';
-    console.log(this.props.card_data.label_item);
     let title = this.props.card_data.label;
     if(!this.props.mobile && this.props.card_data.label_item) title += `: ${this.props.card_data.label_item}`;
     return (

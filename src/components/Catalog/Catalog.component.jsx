@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Paper from 'react-md/lib/Papers';
+import Button from 'react-md/lib/Buttons/Button';
+import FontIcon from 'react-md/lib/FontIcons';
 import Item from '../../redux/selectors/item.selector';
 import stripe from '../../Data/img/stripeBg.gif';
 import NavMenuItem from '../../redux/selectors/navMenuItem.selector';
@@ -14,34 +16,35 @@ export default class Catalog extends Component {
     mobile: PropTypes.bool.isRequired,
     CATALOG_PRODUCTS: PropTypes.array.isRequired,
     card_data: PropTypes.object.isRequired,// {label, label_extended, content}
+    label: PropTypes.string.isRequired
+    // content: 
   };
 
   componentDidMount() {
     makeScrollable('.left-menu-container', '.main-content-container');
   }
 
+  defineContent() {
+    return this.props.CATALOG_PRODUCTS.map((item, i) => <Item key={`card${i}`} item={item}/>)
+  }
+
+  backToList = (e) => this.props.pressBack(e, {})
+
   render() {
+    const display = this.props.label === 'Каталог продукции' ? 'none' : 'block';
     return (
       <Paper className="paper">
         <section className="header container">
-            <h1>Каталог продукции</h1>
+            <h1>{this.props.label}</h1>
+            <Button raised primary iconEl={<FontIcon>keyboard_arrow_left</FontIcon>} onClick={this.backToList} style={{margin: '15px', display}}>назад</Button>
         </section>
         <div className={`container ${this.props.mobile && 'nav-mobile'}`}>
         </div>
         <div className="slider-stripes-container">
           <img src={stripe}/><img src={stripe}/><img src={stripe}/><img src={stripe}/>
         </div>
-        <main className="main-content-container">
-          <div className="slide-container">
-            <Paper className="left-menu-container">
-              <NavMenuItem/>
-            </Paper>
-          </div>
-          <Paper className="results container">
-            {this.props.CATALOG_PRODUCTS.map((item, i) =>  
-                  <Item key={`card${i}`} item={item}/>
-            )}
-          </Paper>
+        <main id="expandedInfoCard" className="main-content-container paper-item-expanded">
+          {this.props.content}
         </main>
         <div className="slider-stripes-container">
           <img src={stripe}/><img src={stripe}/><img src={stripe}/><img src={stripe}/>
@@ -50,7 +53,3 @@ export default class Catalog extends Component {
     );
   }
 }
-          // <div id="expandedInfoCard" className="results-container">
-          //   {this.props.card_data.content}
-          // </div>
-          // 
