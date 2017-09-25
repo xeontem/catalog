@@ -2,7 +2,7 @@
   "name": "catalog_project",
   "version": "0.1.0",
   "private": true,
-  "description": "An example usage of react-md and create-react-app.",
+  "description": "catalog products",
   "dependencies": {
     "immutable": "^3.8.1",
     "node-sass": "^4.5.2",

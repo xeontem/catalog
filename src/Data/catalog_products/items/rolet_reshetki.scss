@@ -1,0 +1,41 @@
+
+#rolet_reshetki {
+	width: 100%;
+	.wrapper {
+		padding: 10px;
+    	margin: 10px 0;
+	}
+
+	.image-wrapper {
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+		
+		img {
+			margin: 10px 0;
+			height: 180px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	#rolet_reshetki {
+		.image-wrapper {
+			img {
+				width: 100%;
+				height: 25%;
+			}
+		}
+	}
+}
+
+//----------------- mobile --------------------------
+#rolet_reshetki {
+
+	.wrapper-mobile {
+		width: calc(100% + 47px);
+	    padding: 10px;
+	    margin: 10px -23px;
+	}
+}
