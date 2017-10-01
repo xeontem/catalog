@@ -55,7 +55,7 @@
 
 	.center-image {
 		display: block;
-		width: 80%;
+		width: 50%;
 		margin: 0 auto;
 	}
 
@@ -90,10 +90,27 @@
 }
 
 @media screen and (max-width: 600px) {
-	#vorota_garaznye {
+	#vezdnye_vorota {
 		.addit-info, .optins-wrapper {
 			flex-direction: column;
 			align-items: center;
 		}
+
+		.center-image {
+			display: block;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+//--------------------- mobile ------------------------
+
+#vezdnye_vorota {
+	.center-image-mobile {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
 	}
 }
