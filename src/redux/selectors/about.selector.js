@@ -1,3 +1,4 @@
+import R from 'ramda';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import About from '../../components/About/About.component';
@@ -5,12 +6,12 @@ import { nextImage } from '../actions/nextImage.action';
 
 function mapStateToProps(state) {
   return { 
-  	mobile: state.AboutReducer.get('mobile'),
-    slider_info: state.AboutReducer.get('slider_info'),
-    sliderImages: state.AboutReducer.get('sliderImages'),
-    imageIndex: state.AboutReducer.get('imageIndex'),
-    imgSrc: state.AboutReducer.get('imgSrc'),
-    PORTFOLIO: state.AboutReducer.get('PORTFOLIO') 
+  	mobile: R.view(R.lensProp('mobile'), state.AboutReducer),
+    slider_info: R.view(R.lensProp('slider_info'), state.AboutReducer),//state.AboutReducer.get('slider_info'),
+    sliderImages: R.view(R.lensProp('sliderImages'), state.AboutReducer),//state.AboutReducer.get('sliderImages'),
+    imageIndex: R.view(R.lensProp('imageIndex'), state.AboutReducer),//state.AboutReducer.get('imageIndex'),
+    imgSrc: R.view(R.lensProp('imgSrc'), state.AboutReducer),//state.AboutReducer.get('imgSrc'),
+    PORTFOLIO: R.view(R.lensProp('PORTFOLIO'), state.AboutReducer),//state.AboutReducer.get('PORTFOLIO') 
   }
 }
 

@@ -1,3 +1,4 @@
+import R from 'ramda';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Works from '../../components/Works/Works.component';
@@ -5,7 +6,7 @@ import { toggleDialog } from '../actions/toggleDialog.action';
 
 function mapStateToProps(state) {
   return { 
-  	mobile: state.AboutReducer.get('mobile')
+  	mobile: R.view(R.lensProp('mobile'), state.AboutReducer)
   }
 }
 

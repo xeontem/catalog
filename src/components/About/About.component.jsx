@@ -1,3 +1,4 @@
+import R from 'ramda';
 import React, { Component, PropTypes } from 'react';
 import Paper from 'react-md/lib/Papers';
 import Button from 'react-md/lib/Buttons/Button';
@@ -9,6 +10,8 @@ import logo from './logo.png';
 import stripe from '../../Data/img/stripeBg.gif';
 
 import './about.css';
+
+
 
 export default class About extends Component {
   static propTypes = {
@@ -31,9 +34,7 @@ export default class About extends Component {
 
   render() {
     setTimeout(() => this.props.nextImg(), 5000);
-    let slider_info = this.props.slider_info[0];
-    if(this.props.slider_info[this.props.imageIndex]) slider_info = this.props.slider_info[this.props.imageIndex];
-    
+    let slider_info = this.props.slider_info[this.props.imageIndex] ? this.props.slider_info[this.props.imageIndex] : this.props.slider_info[0];
     return (
       <Paper className="paper">
         <section className="header">

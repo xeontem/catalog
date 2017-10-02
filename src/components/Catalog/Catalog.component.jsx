@@ -13,10 +13,10 @@ import './catalog.css';
 
 export default class Catalog extends Component {
   static propTypes = {
-    mobile: PropTypes.bool.isRequired,
-    CATALOG_PRODUCTS: PropTypes.array.isRequired,
-    card_data: PropTypes.object.isRequired,// {label, label_extended, content}
-    label: PropTypes.string.isRequired
+    // mobile: PropTypes.bool.isRequired,
+    // CATALOG_PRODUCTS: PropTypes.array.isRequired,
+    // card_data: PropTypes.object.isRequired,// {label, label_extended, content}
+    // label: PropTypes.string.isRequired
     // content: 
   };
 

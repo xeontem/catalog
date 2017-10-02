@@ -1,3 +1,4 @@
+import R from 'ramda';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Item from '../../components/Item/Item.component';
@@ -11,7 +12,7 @@ import { toggleCatalogContent } from '../actions/toggleCatalogContent.action';
 
 function mapStateToProps(state) {
   return { 
-  	mobile: state.AboutReducer.get('mobile'),
+  	mobile: R.view(R.lensProp('mobile'), state.AboutReducer),
   }
 }
 

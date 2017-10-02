@@ -4,10 +4,10 @@
   "private": true,
   "description": "catalog products",
   "dependencies": {
-    "immutable": "^3.8.1",
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
     "prop-types": "^15.5.10",
+    "ramda": "^0.24.1",
     "react": "^15.5.4",
     "react-addons-css-transition-group": "^15.5.2",
     "react-addons-transition-group": "^15.5.2",
