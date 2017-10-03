@@ -1,0 +1,116 @@
+@import '../../../_globals';
+
+#vezdnye_vorota {
+	width: 100%;
+	.sandwich-images {
+		display: flex;
+	    justify-content: space-evenly;
+	    flex-wrap: wrap;
+	    ol {
+	    	margin: 5px 0;
+	    }
+	}
+
+	.bottom-images {
+		overflow: hidden;
+		float: right;
+		margin: 20px 0;
+		padding: 5px;
+		img {
+			width: 190px;
+		}
+	}
+	.clear {
+		clear: both;
+	}
+
+	.icons-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		div {
+			display: flex;
+			margin: 5px;
+			align-items: center;
+		}
+		figure {
+			margin: 0;
+		}
+		h4 {
+			margin: 0 10px;
+			line-height: 1;
+		}
+	}
+
+	.addit-info {
+		display: flex;
+		img {
+		    width: 25vw;
+    		max-width: 300px;
+		}
+		ul {
+			margin-top: 80px;
+		}
+	}
+
+	.center-image {
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	section {
+		margin: 20px 0;
+	}
+	
+	.bold-header {
+	    font-size: 16pt;
+		font-weight: 500;
+	}
+
+	.optins-wrapper {
+		display: flex;
+	    margin: 15px 0;
+		img {
+			width: 40vw;
+	    	max-width: 410px;
+		}
+	}
+	.windows-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		div {
+			width: 200px;
+			margin: 10px;
+			img {width: 200px;}
+		}
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+	#vezdnye_vorota {
+		.addit-info, .optins-wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.center-image {
+			display: block;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+//--------------------- mobile ------------------------
+
+#vezdnye_vorota {
+	.center-image-mobile {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+}

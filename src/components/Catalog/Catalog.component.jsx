@@ -16,7 +16,7 @@ export default class Catalog extends Component {
     // mobile: PropTypes.bool.isRequired,
     // CATALOG_PRODUCTS: PropTypes.array.isRequired,
     // card_data: PropTypes.object.isRequired,// {label, label_extended, content}
-    // label: PropTypes.string.isRequired
+    label: PropTypes.string.isRequired
     // content: 
   };
 
