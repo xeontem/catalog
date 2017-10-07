@@ -1,6 +1,5 @@
 import React from 'react';
 import FontIcon from 'react-md/lib/FontIcons';
-
 import About from '../redux/selectors/about.selector';
 // import Works from '../redux/selectors/works.selector';
 import Catalog from '../redux/selectors/catalog.selector';

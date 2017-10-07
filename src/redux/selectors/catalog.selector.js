@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Catalog from '../../components/Catalog/Catalog.component';
 import { toggleCatalogContent } from '../actions/toggleCatalogContent.action';
-
+import { changePath } from '../actions/changePath.action';
 function mapStateToProps(state) {
   return { 
   	// mobile: R.view(R.lensProp('mobile'), state.AboutReducer),
@@ -16,8 +16,9 @@ function mapStateToProps(state) {
 
 function mapActionsToProps(dispatch) {
   return {
-    pressBack: bindActionCreators(toggleCatalogContent, dispatch)// see ExtendedInfoCardReducer
-	};
+    pressBack: bindActionCreators(toggleCatalogContent, dispatch),// see ExtendedInfoCardReducer
+	  changePath: bindActionCreators(changePath, dispatch)
+  };
 }
 
 export default connect(mapStateToProps, mapActionsToProps)(Catalog);

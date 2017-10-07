@@ -29,7 +29,10 @@ export default class Catalog extends Component {
     return this.props.CATALOG_PRODUCTS.map((item, i) => <Item key={`card${i}`} item={item}/>)
   }
 
-  backToList = (e) => this.props.pressBack(e, {})
+  backToList = (e) => {
+    this.props.changePath('/catalog');
+    this.props.pressBack(e, {});
+  }
 
   render() {
     const display = this.props.label === 'Каталог продукции' ? 'none' : 'block';

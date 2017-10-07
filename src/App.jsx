@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { Redirect, Link } from 'react-router-dom';
+import { PropTypes } from 'prop-types'; 
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 import Tabs from 'react-md/lib/Tabs/Tabs';
 import Tab from 'react-md/lib/Tabs/Tab';
@@ -14,28 +14,28 @@ import { CONST } from './Data/constants';
 // let calcTab = w => ts => ts.filter(t => w === t.path)[0] || TABS[0];
 
 export default class App extends Component {
+  static propTypes = {
+    path: PropTypes.string.isRequired,
+    prevPath: PropTypes.string.isRequired
+  };
+
   constructor(props) {
     super(props);
-    // let tab = calcTab(window.location.pathname)(TABS);
-    this.state = {
-      // path: tab.path,
-      // activeTabIndex: TABS.indexOf(tab),
-      TABS
-    };
+    this.state = {};
   }
 
   _handleTabChange = (activeTabIndex) => {
-    // let path = this.state.TABS[activeTabIndex].path;
+    this.props.changePath(TABS[activeTabIndex].path);
     this.setState({ activeTabIndex });
   }
 
   render() {
-    let { activeTabIndex, TABS } = this.state;
-    // let searchBoxPath = window.location.pathname;
+    let { activeTabIndex } = this.state;
     return (
       <div>
+      {this.props.prevPath !== this.props.path && <Redirect to={this.props.path} />}
       <ExendedInfoCard/>
-      <TabsContainer onTabChange={this._handleTabChange}activeTabIndex={activeTabIndex} panelClassName="md-grid"  slideHeightProp="minHeight" colored>
+      <TabsContainer onTabChange={this._handleTabChange} activeTabIndex={activeTabIndex} panelClassName="md-grid"  slideHeightProp="minHeight" colored>
         <Tabs tabId="tab">
           {TABS.map((tab, i) => 
             <Tab key={i} label={CONST.mobile ? '' : tab.label} icon={tab.icon}>
@@ -55,7 +55,3 @@ export default class App extends Component {
     );
   }
 }
-// <Switch>
-// <Route path='/roster'/>
-// <Route path='/page' component={Page} />
-// </Switch>

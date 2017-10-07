@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, browserHistory } from 'react-router-dom';
-import App from './App';
+import App from './redux/selectors/app.selector';
 import './index.css';
 
 import WebFontLoader from 'webfontloader';
