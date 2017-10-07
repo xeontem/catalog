@@ -1,8 +1,10 @@
 import R from 'ramda';
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import { PropTypes } from 'prop-types'; 
 import Paper from 'react-md/lib/Papers';
 import Button from 'react-md/lib/Buttons/Button';
 import FontIcon from 'react-md/lib/FontIcons';
+import { Route } from 'react-router-dom';
 
 import ExendedInfoCard from '../../redux/selectors/extendedInfoCard.selector'; 
 import Works from '../../redux/selectors/works.selector';
@@ -37,6 +39,7 @@ export default class About extends Component {
     let slider_info = this.props.slider_info[this.props.imageIndex] ? this.props.slider_info[this.props.imageIndex] : this.props.slider_info[0];
     return (
       <Paper className="paper">
+        <Route path='/roster'/>
         <section className="header">
           <img className ="space-around logo" src={logo} />
           <div className="space-around">

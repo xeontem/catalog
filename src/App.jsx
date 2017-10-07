@@ -11,30 +11,29 @@ import { TABS } from './Data/tabs';
 import { CONST } from './Data/constants';
 
 // calcTab:: String -> Array -> Object
-let calcTab = w => ts => ts.filter(t => w === t.path)[0] || TABS[0];
+// let calcTab = w => ts => ts.filter(t => w === t.path)[0] || TABS[0];
 
 export default class App extends Component {
   constructor(props) {
     super(props);
-    let tab = calcTab(window.location.pathname)(TABS);
+    // let tab = calcTab(window.location.pathname)(TABS);
     this.state = {
-      path: tab.path,
-      activeTabIndex: TABS.indexOf(tab),
+      // path: tab.path,
+      // activeTabIndex: TABS.indexOf(tab),
       TABS
     };
   }
 
   _handleTabChange = (activeTabIndex) => {
-    let path = this.state.TABS[activeTabIndex].path;
-    this.setState({ activeTabIndex, path });
+    // let path = this.state.TABS[activeTabIndex].path;
+    this.setState({ activeTabIndex });
   }
 
   render() {
-    let { activeTabIndex, path, TABS } = this.state;
-    let searchBoxPath = window.location.pathname;
+    let { activeTabIndex, TABS } = this.state;
+    // let searchBoxPath = window.location.pathname;
     return (
       <div>
-      {searchBoxPath !== path && <Redirect to={path}/>}
       <ExendedInfoCard/>
       <TabsContainer onTabChange={this._handleTabChange}activeTabIndex={activeTabIndex} panelClassName="md-grid"  slideHeightProp="minHeight" colored>
         <Tabs tabId="tab">
@@ -56,3 +55,7 @@ export default class App extends Component {
     );
   }
 }
+// <Switch>
+// <Route path='/roster'/>
+// <Route path='/page' component={Page} />
+// </Switch>

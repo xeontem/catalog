@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import { PropTypes } from 'prop-types'; 
 import Paper from 'react-md/lib/Papers';
 import Button from 'react-md/lib/Buttons/Button';
 import FontIcon from 'react-md/lib/FontIcons';
@@ -16,7 +17,7 @@ export default class Catalog extends Component {
     // mobile: PropTypes.bool.isRequired,
     // CATALOG_PRODUCTS: PropTypes.array.isRequired,
     // card_data: PropTypes.object.isRequired,// {label, label_extended, content}
-    // label: PropTypes.string.isRequired
+    label: PropTypes.string.isRequired
     // content: 
   };
 

@@ -4,14 +4,15 @@
 .card-item {
 	width: 30%;
 	margin: 10px;
-	
+	transition: width 0.5s, box-shadow 0.5s;
 	.btn--icon {
 		display: none;
 	}
 }
 
 .card-item:hover {
-    box-shadow: 0 0 10px 3px $md-background-color;
+	width: 32%;
+    box-shadow: 0 0 10px 3px black;
     cursor: pointer;
 }
 
@@ -31,15 +32,21 @@
 @media screen and (max-width: 1500px) {
 
 	.card-item {
-		width: 30%;
+		// width: 30%;
    		min-width: 300px; 
 	}	
+	.card-item:hover {
+		width: 38%;
+	}
 }
 
 @media screen and (max-width: 720px) {
 	.card-item {
 		max-width: initial;
 		width: 90%;
+	}
+	.card-item:hover {
+		width: 92%;
 	}
 }
 

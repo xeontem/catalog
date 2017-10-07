@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import { PropTypes } from 'prop-types'; 
 import { ExpansionList, ExpansionPanel } from 'react-md/lib/ExpansionPanels';
 import Paper from 'react-md/lib/Papers';
 import './works.css';

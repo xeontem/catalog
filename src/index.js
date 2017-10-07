@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, browserHistory } from 'react-router-dom';
 import App from './App';
 import './index.css';
 
@@ -16,7 +16,7 @@ WebFontLoader.load({
 
 ReactDOM.render(
   <Provider store={store}>
-  	<BrowserRouter>
+  	<BrowserRouter history={browserHistory}>
   		<App />
   	</BrowserRouter>
   </Provider>,
