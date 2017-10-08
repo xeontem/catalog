@@ -6,9 +6,8 @@ import Colours from '../../../components/Colours/Colours';
 import ProfileTypes from '../../../components/ProfileTypes/ProfileTypes';
 // import img from '../../img/0-protrend.jpg';
 import {CONST} from '../../constants';
-import './vezdnye_vorota.css';
-
-export const vezdnye_vorota_short = 'Роллетные системы (другими словами - рольставни или роллеты) устанавливаются на дверные или оконные проемы и обеспечивают надежную защиту помещения от посторонних глаз, шума, погодных условий и взлома.';
+import './panoramnye_vorota.css';
+import panoramImage from '../../img/panoram.jpg'; 
 
 // const CONST.ORIGIN = 'http://www.alutech-group.com/upload/iblock/809/0-protrend.jpg';
 const CustomFooter = () => (
@@ -20,105 +19,202 @@ const CustomFooter = () => (
 const style = CONST.mobile ? {width: '100%'} : {};
 const listClass = CONST.mobile ? 'expansion-list-mobile' : '';
 const construct_preview_image = CONST.mobile ? "center-image-mobile" : "center-image";
-export const vezdnye_vorota_extended =
-			<div id="vezdnye_vorota">
-				<h3>Въездные ворота</h3>
-        <Paper className="image-placeholder"><img src={CONST.ORIGIN+'/upload/iblock/d4a/07.jpg'} alt="image" role="presentation" /></Paper>
-        <p>Система комплектующих ALUTECH серии ADS400 применяется для изготовления въездных конструкций (откатных, распашных ворот и калиток), а также секций ограждений и предназначается для установки на частных и промышленных объектах.</p>
-        <p>Мы предлагаем высококачественные конструкции ворот серии ADS400 для различных ценовых сегментов.</p>
-        <ul className="aaddss">
-          <li><b>ELEGANT</b> – более экономичный  вариант конструкции распашных и откатных ворот, изготовленных на базе профилей  шириной 68 мм. Модель <em>Elegant</em> позволяет изготавливать:
-            <ol>
-          <li>откатные ворота с максимальными размерами 4250×2460 мм;  </li>
-          <li>распашные ворота с максимальными размерами 4000×2585 мм; </li>
-        </ol></li></ul>
-        <ul className="aaddss">
-          <li><b>COMFORT</b> – конструкции распашных и откатных ворот, изготовленных на базе стандартных профилей шириной 96 мм. Модель Comfort позволяет изготавливать ворота с максимальными размерами 5000×3210 мм.</li>
-        </ul>
+
+export const panoramnye_vorota_short = 'В панорамных воротах воплощены все важнейшие качества и новейшие тенденции, представленные на рынке секционных ворот: превосходная функциональность, широкий размерный ряд, разнообразная цветовая гамма.';
+export const panoramnye_vorota_extended =
+			<div id="panoramnye_vorota">
+				<h3>Панорамные ворота</h3>
+        <Paper className="image-placeholder"><img src={panoramImage} alt="panoramnye vorota" role="presentation" /></Paper>
+        <p>В панорамных воротах воплощены все важнейшие качества и новейшие тенденции, представленные на рынке секционных ворот: превосходная функциональность, широкий размерный ряд, разнообразная цветовая гамма. Изящная алюминиевая конструкция с максимальным остеклением отвечает современным требованиям к дизайнерскому оформлению, обеспечивая при этом хорошую тепло- и звукоизоляцию. Панорамные ворота являются идеальным решением для зданий в стиле Hi-tech и автосалонов.</p>
+        <p>Панорамные ворота представлены тремя сериями, которые учитывают любые запросы клиентов: AluTrend, AluPro и AluTherm.</p>
         <ExpansionList className={'md-cell md-cell--12 clear ' + listClass}>
-          <ExpansionPanel headerClassName="panel-header" label="Откатные ворота" style={style} footer={null}>
+          <ExpansionPanel headerClassName="panel-header" label="Панорамные ворота AluTrend" style={style} footer={null}>
             <section className="icons-wrapper">
               <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/ff4/otk-1.png"}/></figure>
-                <h4>Минимум 25 000 циклов открывания-закрывания<br/></h4>
+                <figure><img src={CONST.ORIGIN + "/upload/iblock/ea6/arg-007.png"}/></figure>
+                <h4>Конкурентная цена<br/></h4>
               </div>
               <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/9dd/otk-2.png"}/></figure>
-                <h4>Эстетика. Современный дизайн</h4>
-              </div>
-              <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/b47/otk-3.png"}/></figure>
-                <h4>Передовые решения для въездных ворот</h4>
+                <figure><img src={CONST.ORIGIN + "/upload/iblock/0d2/ystanovka.png"}/></figure>
+                <h4>Широкие возможности применения</h4>
               </div>
             </section>
             <ul>
-              <li>Более 20 вариантов заполнения полотна<br/></li>
-              <li>Полимерное покрытие основных элементов<br/></li>
-              <li>Универсальный алюминиевый профиль шины, совмещенный с профилем рамы, обеспечивает высокую жесткость, прочность и надежность конструкции сдвижных ворот<br/></li>
-              <li>Минимальный рабочий ресурс 25 000 циклов открытия и закрытия<br/></li>
-              <li>Скрытый крепеж гарантирует высокую степень защиты<br/></li>
-              <li>Бесшумная работа за счет опорных роликов из стеклонаполненного полиамида и нейлоновой зубчатой рейки<br/></li>
-              <li>Ремонтопригодная конструкция для устранения повреждений или замены заполнения</li>
+              <li>Панорамные панели из алюминиевых профилей толщиной 40 мм<br/></li>
+              <li>Детали из оцинкованной стали<br/></li>
+              <li>Базовый ресурс пружин до 25 000 циклов «подъема-опускания»<br/></li>
+              <li>Расширенный ресурс пружин до 100 000 циклов «подъема-опускания»<br/></li>
+              <li>10 типов монтажа<br/></li>
+              <li>Максимальный размер ворот 7000х6000 мм<br/></li>
+              <li>Любой размер ворот с шагом 5 мм<br/></li>
+              <li>Системы безопасности в базовом комплекте ворот<br/></li>
+              <li>9 стандартных цветов</li>
             </ul>
             <section>
-              <h4 className="primary-colored-text">Назначение и применение автоматических откатных ворот серии ADS400</h4>
-              <p>Мы усовершенствовали устройство въездных ворот и создали продукт нового поколения – откатные автоматические ворота серии ADS400, которые займут достойное место как на даче, так и на промышленных объектах.</p>
-              <p>Въездные ворота «Алютех» сочетают в себе традиционно высокое качество, современные технологии, долговечность и эстетичный дизайн. Улучшенный вариант сдвижных ворот привлекает доступной ценой, сроком эксплуатации не менее 15 лет, возможностью установки более 20 вариантов заполнений полотна ворот различными материалами — алюминиевым профилем сплошного или разреженного заполнения, сэндвич-панелью толщиной 45 мм, роллетным профилем AG/77, листовым материалом (профлистом, деревянной доской), высоким качеством комплектующих и ремонтопригодностью.</p>
-              <p>Раздвижные автоматические ворота новой серии ADS400 представлены в таком широком ассортименте, что потребителю не составит труда, исходя из своих запросов и возможностей, выбрать оптимальный вариант конструкции ворот.</p>
-            </section>
-            <section>
-              <h4 className="primary-colored-text">Преимущества откатных ворот</h4>
-              <p>Мы усовершенствовали устройство въездных ворот и создали продукт нового поколения – откатные автоматические ворота серии ADS400, которые займут достойное место как на даче, так и на промышленных объектах.</p>
-              <p>Въездные ворота «Алютех» сочетают в себе традиционно высокое качество, современные технологии, долговечность и эстетичный дизайн. Улучшенный вариант сдвижных ворот привлекает доступной ценой, сроком эксплуатации не менее 15 лет, возможностью установки более 20 вариантов заполнений полотна ворот различными материалами — алюминиевым профилем сплошного или разреженного заполнения, сэндвич-панелью толщиной 45 мм, роллетным профилем AG/77, листовым материалом (профлистом, деревянной доской), высоким качеством комплектующих и ремонтопригодностью.</p>
-              <p>Раздвижные автоматические ворота новой серии ADS400 представлены в таком широком ассортименте, что потребителю не составит труда, исходя из своих запросов и возможностей, выбрать оптимальный вариант конструкции ворот.</p>
-              <p>Современная и постоянная система контроля на каждом из этапов разработки и  производства продукта обеспечивает высокое качество и длительный срок  эксплуатации продукции. </p>
+              <h4 className="primary-colored-text">Типы полотна ворот</h4>
             </section>
             <section>
               <div className="clear">
                   <hr/>
-                  <div className="col_l2 col_m2 col_x12"><Paper className="bottom-images"><img src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_4_thumb.jpg'} title="Автоматические секционные гаражные ворота АЛЮТЕХ" alt="Автоматические секционные гаражные ворота АЛЮТЕХ"/></Paper></div>
-                  <div className="col_l10 col_m10">Конструкция профилей серии ADS400  предусматривает возможность установки более 20 вариантов внутреннего или  накладного заполнений полотна автоматических сдвижных ворот. Использование  различных заполнений позволяет воплотить в готовых изделиях различные по  стоимости и исполнению конструкции — от элитных до экономичных.</div>
+                  <div className="col_l2 col_m2 col_x12"><Paper className="bottom-images"><img src={CONST.ORIGIN+'/images/product/gate/panoram/tipi10.jpg'} title="Автоматические секционные гаражные ворота АЛЮТЕХ" alt="Автоматические секционные гаражные ворота АЛЮТЕХ"/></Paper></div>
+                  <div className="col_l10 col_m10"><p>АЛП. Вариант полотна выполненного из панорамных панелей.</p></div>
               </div>    
               <div className="clear">
                    <hr/>
-                   <div className="col_l2 col_m2 col_x12"><Paper className="bottom-images"><img src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_5_thumb.jpg'} title="AN - Motors" alt="AN - Motors"/></Paper></div>
-                   <div className="col_l10 col_m10"><p>Все основные элементы конструкции откатных ворот  изготавливаются из алюминиевого профиля с полимерным покрытием, которое надежно  защищает полотно ворот от неблагоприятного воздействия атмосферы, исключает  коррозию и увеличивает срок эксплуатации изделий.</p></div>
+                   <div className="col_l2 col_m2 col_x12"><Paper className="bottom-images"><img src={CONST.ORIGIN+'/images/product/gate/panoram/tipi11.jpg'} title="AN - Motors" alt="AN - Motors"/></Paper></div>
+                   <div className="col_l10 col_m10"><p>АЛПС. Вариант полотна с нижней частью в виде сэндвич-панели (толщина 40 мм и на выбор рисунок «S-гофр» или «Микроволна») и панорамными панелями.</p></div>
               </div>
               <div className="clear">
                 <hr/>
-                <div className="col_l2 col_m2 col_x12"><Paper className="bottom-images"><img src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_6_thumb.jpg'} title="Comunello" alt="Comunello"/></Paper></div>
-                <div className="col_l10 col_m10"><p>Универсальный алюминиевый профиль шины 96х177  мм, совмещенный с профилем рамы, обеспечивает высокую жесткость, прочность и  надежность конструкции сдвижных ворот. Минимальный рабочий ресурс ворот составляет 25  000 циклов открывания и закрывания ворот, что ориентировочно соответствует 15  годам эксплуатации откатных ворот (по четыре открывания и закрывания ворот  ежедневно на протяжении всего периода). Бесшумность работы раздвижных ворот  обеспечивается за счет использования опор с роликами из стеклонаполненного  полиамида и нейлоновой зубчатой рейки.</p></div>
-              </div>
-              <div className="clear">
-                 <hr/>
-                 <div className="col_l2 col_m2 col_x12"><Paper className="bottom-images"><img src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_7_thumb.jpg'} title="Marantec" alt="Marantec"/></Paper></div>
-                 <div className="col_l10 col_m10"><p> Конструкция ворот «АЛЮТЕХ» предусматривает  возможность быстро устранять различного рода повреждения или менять один вид  заполнения на другой, не прибегая к демонтажу конструкции. Скрытый крепеж гарантирует более высокую степень  защиты от несанкционированного доступа. Отсутствие видимых элементов крепежа  обеспечивает более эстетичный внешний вид конструкций.</p></div>
+                <div className="col_l2 col_m2 col_x12"><Paper className="bottom-images"><img src={CONST.ORIGIN+'/images/product/gate/panoram/tipi12.jpg'} title="Comunello" alt="Comunello"/></Paper></div>
+                <div className="col_l10 col_m10"><p>ПО. Полотно ворот из сэндвич-панелей ProTrend с одной или несколькими панорамными панелями.</p></div>
               </div>
               <div className="clear"><hr/></div>
             </section>
             <section>
-              <h4 className="primary-colored-text">Типы заполнений ворот серии ADS400</h4>
+              <h4 className="primary-colored-text">Панорамные ворота со сплошным остеклением</h4>
+              <p>Сплошное остекление разработали для помещений, где важно обеспечить доступ к естественному свету. Выгодный показ продукции – вот важное преимущество таких ворот при установке в автосалонах и магазинах.</p>
+              <div className="sandwich-images"> 
+                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/panoram/tipi4.jpg'} alt="Без импоста" title="Тёмный дуб" width="245" height="180"/> 
+                 <p>Ворота шириной до 3000 мм<br/> выпускают без импоста.</p>
+                </div>
+                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/panoram/tipi5.jpg'} alt="С импостом" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
+                 <p>Ворота шириной до 5000 мм<br/> могут выпускать с одним импостом.</p>
+                </div>
+              </div>
+              <section>  
+                <h4 className="primary-colored-text">Панорамные панели: варианты исполнения</h4>
+                <hr/> 
+                <div className="sandwich-images">
+                  <div className="col_l4 col_m6 col_pad quad">
+                    <p>Двойное остекление 26 мм</p>
+                    <ul>
+                      <li>Используют стойкий к ударам SAN-пластик с максимальной прозрачностью.</li>
+                      <li>9 стандартных цветов по каталогу RAL по стандартной цене (без дополнительной наценки)</li>
+                      <li>Возможна окраска в любой цвет по каталогу RAL</li>
+                    </ul>
+                  </div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/colors/double-9006.jpg'} alt="image"/></div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/ass2.jpg'} alt="image"/></div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/ass2-2.jpg'} alt="image"/></div>
+                </div>
+                <hr/> 
+                <div className="sandwich-images">
+                  <div className="col_l4 col_m6 col_pad quad">
+                    <p>Одинарное остекление 3 мм</p>
+                    <ul>
+                      <li>Используют стойкий к ударам акрил с максимальной прозрачностью.</li>
+                      <li>9 стандартных цветов по каталогу RAL по стандартной цене (без дополнительной наценки)</li>
+                      <li>Возможна окраска в любой цвет по каталогу RAL</li>
+                    </ul>
+                  </div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/colors/single-9006.jpg'} alt="image"/></div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/ass6.jpg'} alt="image"/></div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/ass6-2.jpg'} alt="image"/></div>
+                </div>
+                <hr/> 
+                <div className="sandwich-images">
+                  <div className="col_l4 col_m6 col_pad quad">
+                    <p>Композитная алюминиевая панель 26 мм</p>
+                    <ul>
+                      <li>Панель выпускают из двух алюминиевых листов с тиснением stucco и заполняют полистиролом.</li>
+                      <li>9 стандартных цветов по каталогу RAL по стандартной цене (без дополнительной наценки)</li>
+                      <li>Возможна окраска рамы и панели в любой цвет по каталогу RAL</li>
+                    </ul>
+                  </div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/colors/kompozit26-9006.jpg'} alt="image"/></div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/kompo-1.jpg'} alt="image"/></div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/kompo-2.jpg'} alt="image"/></div>
+                </div>
+                <hr/> 
+                <div className="sandwich-images">
+                  <div className="col_l4 col_m6 col_pad quad">
+                    <p>Композитная алюминиевая панель 3 мм</p>
+                    <ul>
+                      <li>Панель выпускают из двух алюминиевых листов без тиснения и заполняют полиэтиленом под высоким давлением.</li>
+                      <li>9 стандартных цветов по каталогу RAL по стандартной цене (без дополнительной наценки)</li>
+                      <li>Возможна окраска рамы и панели в любой цвет по каталогу RAL</li>
+                    </ul>
+                  </div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/colors/kompozit3-9006.jpg'} alt="image"/></div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/kompo-4.jpg'} alt="image"/></div>
+                  <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/kompo-3.jpg'} alt="image"/></div>
+                </div>
+              </section>
+            </section>
+          </ExpansionPanel>
+          <ExpansionPanel headerClassName="panel-header" label="Панорамные ворота AluPro" style={style} footer={null}>
+            <section className="icons-wrapper">
+              <div>
+                <figure><img src={CONST.ORIGIN + "/upload/iblock/b88/rasp-1.png"}/></figure>
+                <h4>Надежность эксплуатации<br/></h4>
+              </div>
+              <div>
+                <figure><img src={CONST.ORIGIN + "/upload/iblock/4e4/rasp-2.png"}/></figure>
+                <h4>Многообразие конструктивных решений</h4>
+              </div>
+              <div>
+                <figure><img src={CONST.ORIGIN + "/upload/iblock/1a4/rasp-3.png"}/></figure>
+                <h4>Быстрая сборка и монтаж</h4>
+              </div>
+            </section>
+            <ul>
+              <li>Более 20 вариантов конструктивных решений распашных ворот, различных по стоимости и исполнению<br/></li>
+              <li>Основные элементы конструкции изготавливаются из алюминиевого профиля с полимерным покрытием<br/></li>
+              <li>Высокая надежность соединений, исключающая провисание створок в процессе эксплуатации<br/></li>
+              <li>Надежные и качественные трехсекционные накладные петели Fapim<br/></li>
+              <li>Скрытый крепеж гарантирует высокую степень защиты от несанкционированного доступа<br/></li>
+              <li>Легко разборная конструкция для устранения повреждений или замены заполнения</li>
+            </ul>
+            <section>
+              <h4 className="primary-colored-text">Назначение и применение</h4>
+              <Paper className="image-placeholder"><img src={CONST.ORIGIN+'/images/product/gate/panoramnye-vorota/pic_22.jpg'} alt="image" role="presentation" /></Paper>
+              <p>Распашные ворота представляют собой две створки, закрепленные к столбам  проема с помощью трех секционных петель. Створки ворот состоят из рам,  собранных из алюминиевых профилей, в которых установлено заполнение. Заполнение  может располагаться как внутри рамы (встроенный тип монтажа), так и снаружи  (накладной тип монтажа). По желанию заказчика можно изготовить полотно  распашных ворот со сплошным, разреженным или комбинированным заполнением.  Заполнения можно установить горизонтально или вертикально.</p>
+              <p>Для обеспечения дополнительной жесткости и возможности дальнейшей автоматизации  устанавливается профиль импоста, который входит в стандартную комплектацию.</p>
+            </section>
+            <section>
+              <h4 className="primary-colored-text">Преимущества распашных ворот</h4>
+              <p>Высокая технологичность системы, широкая цветовая гамма, возможность  установки различных по структуре, материалу и исполнению заполнений и их комбинаций  позволяют создать и предложить действительно уникальные конструкции  автоматических распашных ворот.</p>
+              <ul>
+                <li>Уникальная конфигурация профилей серии ADS400  позволяет предложить конечному потребителю более 20 вариантов конструктивных  решений распашных ворот, различных по стоимости и исполнению.</li>
+                <li>Все основные элементы конструкции распашных  ворот для дачи изготавливаются из алюминиевого профиля с полимерным покрытием,  что надежно защищает полотно ворот от неблагоприятного воздействия атмосферы,  исключает коррозию и увеличивает срок эксплуатации изделий.</li>
+                <li>Профили рамы обрабатываются под углом 45˚. При  сборке угловых соединений используется кнопочный стягивающий уголок и  алюминиевый угловой соединитель. Все это обеспечивает высокую надежность  соединения и исключает возможное провисание створок в процессе эксплуатации  распашных ворот.</li>
+                <li>Створки распашных ворот фиксируются с помощью  надежных и качественных трехсекционных накладных петель <em>Fapim</em>, которые  исключают провисание створок в процессе использования готового изделия.</li>
+                <li>Скрытый крепеж гарантирует более высокую степень  защиты от несанкционированного доступа. Отсутствие видимых элементов крепежа  обеспечивает эстетичный внешний вид конструкций.</li>
+                <li>Конструкция ворот «АЛЮТЕХ» предусматривает  возможность быстро устранять различного рода повреждения или менять один вид  заполнения на другой, не прибегая к демонтажу конструкции.</li>
+              </ul>
+              <div className="sandwich-images"> 
+                <div classassName="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/panoramnye-vorota/pic_23_thumb.jpg'} alt="petlya" title="Тёмный дуб" width="245" height="180"/> 
+                </div>
+                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/panoramnye-vorota/pic_24_thumb.jpg'} alt="ugolok" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
+                </div>
+                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/panoramnye-vorota/pic_25_thumb.jpg'} alt="dveri" title="Тёмная вишня" width="245" height="180"/> 
+                </div>
+              </div>
+            </section>
+            <section>
+              <h4 className="primary-colored-text">Типы заполнений распашных ворот</h4>
               <p>Ворота серии ADS400 в равной степени будут соответствовать архитектуре как современного дома в стиле <em>hi-tech</em>, так и коттеджа в классическом исполнении.</p>
               <p>Благодаря различным вариантам рисунков (микроволна, горизонтальный гофр, филенка) и цветам панелей въездные ворота идеально сочетаются с любым отделочным материалом.</p>
               <div className="sandwich-images">
-                <div className="col_l2 col_m3"> 
-                  <p><b>S-гофр</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/0cd/prom24.jpg'} title="S-гофр" alt="S-гофр" width="159" height="294"/> </div>
-                <div className="col_l2 col_m3"> 
-                  <p><b>M-гофр</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/57b/prom25.jpg'} title="M-гофр" alt="M-гофр" width="159" height="294"/> </div>
-                <div className="col_l2 col_m3"> 
-                  <p><b>L-гофр</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/85f/prom26.jpg'} title="L-гофр" alt="L-гофр" width="159" height="294"/>&nbsp; </div>
-                 &nbsp; 
-                <div className="col_l2 col_m3"> 
-                  <p><b>Микроволна</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/3ea/prom27.jpg'} title="Микроволна" alt="Микроволна" width="159" height="294"/>&nbsp; </div>
-                <div className="col_l2 col_m3"> 
-                  <p><b>Филенка</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/51a/prom28.jpg'} title="Филенка" alt="Филенка" width="159" height="294"/> </div>
+              <div className="col_l2 col_m3"> 
+                <p><b>S-гофр</b></p>
+               <img src={CONST.ORIGIN + '/upload/medialibrary/0cd/prom24.jpg'} title="S-гофр" alt="S-гофр" width="159" height="294"/> </div>
+              <div className="col_l2 col_m3"> 
+                <p><b>M-гофр</b></p>
+               <img src={CONST.ORIGIN + '/upload/medialibrary/57b/prom25.jpg'} title="M-гофр" alt="M-гофр" width="159" height="294"/> </div>
+              <div className="col_l2 col_m3"> 
+                <p><b>L-гофр</b></p>
+               <img src={CONST.ORIGIN + '/upload/medialibrary/85f/prom26.jpg'} title="L-гофр" alt="L-гофр" width="159" height="294"/>&nbsp; </div>
+               &nbsp; 
+              <div className="col_l2 col_m3"> 
+                <p><b>Микроволна</b></p>
+               <img src={CONST.ORIGIN + '/upload/medialibrary/3ea/prom27.jpg'} title="Микроволна" alt="Микроволна" width="159" height="294"/>&nbsp; </div>
+              <div className="col_l2 col_m3"> 
+                <p><b>Филенка</b></p>
+               <img src={CONST.ORIGIN + '/upload/medialibrary/51a/prom28.jpg'} title="Филенка" alt="Филенка" width="159" height="294"/> </div>
               </div>
-            
+              
               <section>
                 <p>Ворота из  сэндвич-панелей, имитирующих текстуру древесины (золотой дуб, темный дуб,  вишня), обладают всеми преимуществами стальных ворот и придают коттеджу  элементы престижа и индивидуальности.</p>
               </section>
@@ -164,183 +260,30 @@ export const vezdnye_vorota_extended =
               </section>
               <section>
                 <h4 className="primary-colored-text">Конструкция откатных самонесущих ворот</h4>
-                <p>Откатные  ворота представляют собой самонесущую конструкцию, в которой алюминиевая рама  ворот с заполнением перемещается по роликовым опорам, установленным на  фундаменте вне зоны проезда ворот (за проемом). </p>
-                <img className={construct_preview_image} src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_11.jpg'}/>
+                <p>Конструкция автоматических распашных ворот «АЛЮТЕХ» отличается надежностью и долговечностью, высокими прочностными характеристиками профилей и качественными комплектующими для распашных ворот.</p>
+                <img className={construct_preview_image} src={CONST.ORIGIN+'/images/product/gate/panoramnye-vorota/pic_26.jpg'}/>
                 <div className="sandwich-images">
                   <ol start="1">
                     <li>Столб проема</li>
                     <li>Забор</li>
-                    <li>Полотно</li>
-                    <li>Улавливатель верхний</li>
+                    <li>Створка ворот</li>
+                    <li>Створка ворот</li>
                   </ol>
                   <ol start="5">
-                    <li>Улавливатель нижний</li>
-                    <li>Кронштейн крепления</li>
-                    <li>Опорная рама</li>
-                    <li>Столб удерживающий с роликами</li>
+                    <li>Упор боковой</li>
+                    <li>Упор центральный</li>
+                    <li>Кронштейн крепления электропривода к створке</li>
                   </ol>
                   <ol start="9">
-                    <li>Столб дополнительный с роликами</li>
-                    <li>Раскос</li>
-                    <li>Двигатель</li>
+                    <li>Электропривод</li>
                     <li>Засов</li>
+                    <li>Кронштейн крепления электропривода к столбу проема</li>
                   </ol>
                 </div>
-                <p>Правильный  монтаж раздвижных ворот позволяет без труда открывать и закрывать ворота  вручную. Для запирания используется засов, который входит в базовую  комплектацию. </p>
-              </section>
-              <section>
-                <h4 className="primary-colored-text">Дополнительная комплектация автоматических въездных  ворот</h4>
-                <p>Сдвижные  ворота производства «АЛЮТЕХ» могут комплектоваться следующими элементами:</p>
-                <ul>
-                  <li>рамой опорной для бетонирования; </li>
-                  <li>столбом поддерживающим и раскосом; </li>
-                  <li>рейкой зубчатой. </li>
-                </ul>
-                <p>Для  дополнительного комфорта откатные ворота для дачи и промышленных объектов можно  дополнить отдельно стоящей калиткой, которая обеспечит удобный проход на  территорию.</p>
               </section>
             </section>
           </ExpansionPanel>
-          <ExpansionPanel headerClassName="panel-header" label="Распашные ворота" style={style} footer={null}>
-            <section className="icons-wrapper">
-              <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/b88/rasp-1.png"}/></figure>
-                <h4>Надежность эксплуатации<br/></h4>
-              </div>
-              <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/4e4/rasp-2.png"}/></figure>
-                <h4>Многообразие конструктивных решений</h4>
-              </div>
-              <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/1a4/rasp-3.png"}/></figure>
-                <h4>Быстрая сборка и монтаж</h4>
-              </div>
-            </section>
-            <ul>
-              <li>Более 20 вариантов конструктивных решений распашных ворот, различных по стоимости и исполнению<br/></li>
-              <li>Основные элементы конструкции изготавливаются из алюминиевого профиля с полимерным покрытием<br/></li>
-              <li>Высокая надежность соединений, исключающая провисание створок в процессе эксплуатации<br/></li>
-              <li>Надежные и качественные трехсекционные накладные петели Fapim<br/></li>
-              <li>Скрытый крепеж гарантирует высокую степень защиты от несанкционированного доступа<br/></li>
-              <li>Легко разборная конструкция для устранения повреждений или замены заполнения</li>
-            </ul>
-            <section>
-              <h4 className="primary-colored-text">Назначение и применение</h4>
-              <Paper className="image-placeholder"><img src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_22.jpg'} alt="image" role="presentation" /></Paper>
-              <p>Распашные ворота представляют собой две створки, закрепленные к столбам  проема с помощью трех секционных петель. Створки ворот состоят из рам,  собранных из алюминиевых профилей, в которых установлено заполнение. Заполнение  может располагаться как внутри рамы (встроенный тип монтажа), так и снаружи  (накладной тип монтажа). По желанию заказчика можно изготовить полотно  распашных ворот со сплошным, разреженным или комбинированным заполнением.  Заполнения можно установить горизонтально или вертикально.</p>
-              <p>Для обеспечения дополнительной жесткости и возможности дальнейшей автоматизации  устанавливается профиль импоста, который входит в стандартную комплектацию.</p>
-            </section>
-            <section>
-              <h4 className="primary-colored-text">Преимущества распашных ворот</h4>
-              <p>Высокая технологичность системы, широкая цветовая гамма, возможность  установки различных по структуре, материалу и исполнению заполнений и их комбинаций  позволяют создать и предложить действительно уникальные конструкции  автоматических распашных ворот.</p>
-              <ul>
-                <li>Уникальная конфигурация профилей серии ADS400  позволяет предложить конечному потребителю более 20 вариантов конструктивных  решений распашных ворот, различных по стоимости и исполнению.</li>
-                <li>Все основные элементы конструкции распашных  ворот для дачи изготавливаются из алюминиевого профиля с полимерным покрытием,  что надежно защищает полотно ворот от неблагоприятного воздействия атмосферы,  исключает коррозию и увеличивает срок эксплуатации изделий.</li>
-                <li>Профили рамы обрабатываются под углом 45˚. При  сборке угловых соединений используется кнопочный стягивающий уголок и  алюминиевый угловой соединитель. Все это обеспечивает высокую надежность  соединения и исключает возможное провисание створок в процессе эксплуатации  распашных ворот.</li>
-                <li>Створки распашных ворот фиксируются с помощью  надежных и качественных трехсекционных накладных петель <em>Fapim</em>, которые  исключают провисание створок в процессе использования готового изделия.</li>
-                <li>Скрытый крепеж гарантирует более высокую степень  защиты от несанкционированного доступа. Отсутствие видимых элементов крепежа  обеспечивает эстетичный внешний вид конструкций.</li>
-                <li>Конструкция ворот «АЛЮТЕХ» предусматривает  возможность быстро устранять различного рода повреждения или менять один вид  заполнения на другой, не прибегая к демонтажу конструкции.</li>
-              </ul>
-              <div className="sandwich-images"> 
-                <div classassName="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_23_thumb.jpg'} alt="petlya" title="Тёмный дуб" width="245" height="180"/> 
-                </div>
-                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_24_thumb.jpg'} alt="ugolok" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
-                </div>
-                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_25_thumb.jpg'} alt="dveri" title="Тёмная вишня" width="245" height="180"/> 
-                </div>
-              </div>
-            </section>
-            <section>
-              <h4 className="primary-colored-text">Типы заполнений распашных ворот</h4>
-              <p>Ворота серии ADS400 в равной степени будут соответствовать архитектуре как современного дома в стиле <em>hi-tech</em>, так и коттеджа в классическом исполнении.</p>
-              <p>Благодаря различным вариантам рисунков (микроволна, горизонтальный гофр, филенка) и цветам панелей въездные ворота идеально сочетаются с любым отделочным материалом.</p>
-              <div className="sandwich-images">
-              <div className="col_l2 col_m3"> 
-                <p><b>S-гофр</b></p>
-               <img src={CONST.ORIGIN + '/upload/medialibrary/0cd/prom24.jpg'} title="S-гофр" alt="S-гофр" width="159" height="294"/> </div>
-              <div className="col_l2 col_m3"> 
-                <p><b>M-гофр</b></p>
-               <img src={CONST.ORIGIN + '/upload/medialibrary/57b/prom25.jpg'} title="M-гофр" alt="M-гофр" width="159" height="294"/> </div>
-              <div className="col_l2 col_m3"> 
-                <p><b>L-гофр</b></p>
-               <img src={CONST.ORIGIN + '/upload/medialibrary/85f/prom26.jpg'} title="L-гофр" alt="L-гофр" width="159" height="294"/>&nbsp; </div>
-               &nbsp; 
-              <div className="col_l2 col_m3"> 
-                <p><b>Микроволна</b></p>
-               <img src={CONST.ORIGIN + '/upload/medialibrary/3ea/prom27.jpg'} title="Микроволна" alt="Микроволна" width="159" height="294"/>&nbsp; </div>
-              <div className="col_l2 col_m3"> 
-                <p><b>Филенка</b></p>
-               <img src={CONST.ORIGIN + '/upload/medialibrary/51a/prom28.jpg'} title="Филенка" alt="Филенка" width="159" height="294"/> </div>
-            </div>
-            
-            <section>
-              <p>Ворота из  сэндвич-панелей, имитирующих текстуру древесины (золотой дуб, темный дуб,  вишня), обладают всеми преимуществами стальных ворот и придают коттеджу  элементы престижа и индивидуальности.</p>
-            </section>
-
-            <div className="sandwich-images"> 
-              <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/a0d/black-sm.jpg'} alt="Тёмный дуб" title="Тёмный дуб" width="245" height="180"/> 
-               <p><b>Тёмный дуб</b></p>
-              </div>
-              <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/f20/chery-sm.jpg'} alt="Тёмная вишня" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
-               <p><b>Тёмная вишня</b></p>
-              </div>
-              <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/a2b/golden-sm.jpg'} alt="Золотой дуб" title="Тёмная вишня" width="245" height="180"/> 
-               <p><b>Золотой дуб</b></p>
-              </div>
-            </div>
-
-            <section>
-              <h4 className="primary-colored-text">Цветовая  гамма алюминиевых профилей</h4>
-              <p>Алюминиевые  профили имеют глянцевую структуру поверхности и представлены в различных  цветах: от классических белого и коричневого до оригинальных – красный рубин,  зеленый мох, серебристый металлик, шоколадный.</p>
-              <div className="sandwich-images"> 
-                <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/fcf/color1.jpg'} title="RAL 9016" alt="RAL 9016" width="162" height="118"/> 
-                  <p><b>RAL 9016</b></p>
-                </div>
-                <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/bea/color3.jpg'} title="RAL 9006" alt="RAL 9006" width="162" height="118"/>&nbsp; 
-                  <p><b>RAL 9006</b></p>
-                </div>
-                <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/6c5/color4.jpg'} title="RAL 6005" alt="RAL 6005" width="162" height="118"/>&nbsp; 
-                  <p><b>RAL 6005</b></p>
-                </div>
-                <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/463/color5.jpg'} title="RAL 3004" alt="RAL 3004" width="162" height="118"/>&nbsp; 
-                  <p><b>RAL 3004</b></p>
-                </div>
-                <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/d3d/color6.jpg'} title="RAL 5010" alt="RAL 5010" width="162" height="118"/>&nbsp; 
-                  <p><b>RAL 5010</b></p>
-                </div>
-                <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/ddf/color7.jpg'} title="RAL 8014" alt="RAL 8014" width="162" height="118"/>&nbsp; 
-                  <p><b>RAL 8014</b></p>
-                </div>
-                <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/195/color8.jpg'} title="RAL 8017" alt="RAL 8017" width="162" height="118"/>&nbsp; 
-                  <p><b>RAL 8017</b></p>
-                </div>
-              </div>
-            </section>
-            <section>
-              <h4 className="primary-colored-text">Конструкция откатных самонесущих ворот</h4>
-              <p>Конструкция автоматических распашных ворот «АЛЮТЕХ» отличается надежностью и долговечностью, высокими прочностными характеристиками профилей и качественными комплектующими для распашных ворот.</p>
-              <img className={construct_preview_image} src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_26.jpg'}/>
-              <div className="sandwich-images">
-                <ol start="1">
-                  <li>Столб проема</li>
-                  <li>Забор</li>
-                  <li>Створка ворот</li>
-                  <li>Створка ворот</li>
-                </ol>
-                <ol start="5">
-                  <li>Упор боковой</li>
-                  <li>Упор центральный</li>
-                  <li>Кронштейн крепления электропривода к створке</li>
-                </ol>
-                <ol start="9">
-                  <li>Электропривод</li>
-                  <li>Засов</li>
-                  <li>Кронштейн крепления электропривода к столбу проема</li>
-                </ol>
-              </div>
-            </section>
-          </section>
-          </ExpansionPanel>
-          <ExpansionPanel headerClassName="panel-header" label="Калитка" style={style} footer={null}>
+          <ExpansionPanel headerClassName="panel-header" label="Панорамные ворота AluTherm" style={style} footer={null}>
             <section className="icons-wrapper">
               <div>
                 <figure><img src={CONST.ORIGIN + "/upload/iblock/e25/kali-1.png"}/></figure>
@@ -366,7 +309,7 @@ export const vezdnye_vorota_extended =
             </ul>
             <section>
               <h4 className="primary-colored-text">Преимущества калитки</h4>
-              <Paper className="image-placeholder"><img src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_29_thumb.jpg'} alt="image" role="presentation" /></Paper>
+              <Paper className="image-placeholder"><img src={CONST.ORIGIN+'/images/product/gate/panoramnye-vorota/pic_29_thumb.jpg'} alt="image" role="presentation" /></Paper>
               <p>Конструкция калиточных профилей серии ADS400 предусматривает возможность  исполнения калитки в едином стиле с конструкцией откатных и распашных ворот.  Конфигурация профилей системы позволяет изготовить конструкции с различными  типами открывания и монтажа.</p>
               <ul>
                 <li>Все основные элементы конструкции  изготавливаются из алюминиевого профиля, окрашенного с помощью полимерного  покрытия, что надежно защищает полотно ворот от неблагоприятного воздействия  атмосферы, исключает коррозию и увеличивает срок эксплуатации изделий.</li>
@@ -381,11 +324,11 @@ export const vezdnye_vorota_extended =
               <p>Петли и ручки для калиток распашных ворот доступны в 6 цветах: RAL8014, RAL3004, RAL9006, RAL6005, RAL9016, RAL8017. Фурнитура вышеперечисленных цветов поставляется клиентам без дополнительной платы.
                  Благодаря разнообразным цветовым решениям петель и ручек для калиток и ворот распашного типа можно добиться стилистического единства всего объекта!</p>
               <div className="sandwich-images"> 
-                <div classassName="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_33_thumb.jpg '} alt="petlya" title="Тёмный дуб" width="245" height="180"/> 
+                <div classassName="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/panoramnye-vorota/pic_33_thumb.jpg '} alt="petlya" title="Тёмный дуб" width="245" height="180"/> 
                 </div>
-                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_34_thumb.jpg'} alt="ugolok" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
+                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/panoramnye-vorota/pic_34_thumb.jpg'} alt="ugolok" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
                 </div>
-                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_35_thumb.jpg'} alt="dveri" title="Тёмная вишня" width="245" height="180"/> 
+                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/panoramnye-vorota/pic_35_thumb.jpg'} alt="dveri" title="Тёмная вишня" width="245" height="180"/> 
                 </div>
               </div>
             </section>
@@ -465,7 +408,7 @@ export const vezdnye_vorota_extended =
                 </ol>
                 <p>Калитку возможно установить и во въездные ворота серии «Comfort».</p>
                 <p>Кроме того, встроенная калитка в отличие от отдельной обойдется дешевле  своему будущему владельцу. Срок пользования воротной конструкцией ADS400 с  такой калиткой будет существенно увеличен. </p>
-                <img className={construct_preview_image} src={CONST.ORIGIN+'/images/product/gate/vezdnye-vorota/pic_38.jpg'}/>
+                <img className={construct_preview_image} src={CONST.ORIGIN+'/images/product/gate/panoramnye-vorota/pic_38.jpg'}/>
                 <p>Преимущества встроенной калитки:</p>
                 <ul>
                   <li>Прочная и жесткая конструкция;</li>
@@ -484,115 +427,68 @@ export const vezdnye_vorota_extended =
               </section>
             </section>
           </ExpansionPanel>
-          <ExpansionPanel headerClassName="panel-header" label="Секции ограждения" style={style} footer={null}>
-            <section className="icons-wrapper">
-              <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/c28/ogr-1.png"}/></figure>
-                <h4>Комплексное решение<br/></h4>
-              </div>
-              <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/d0b/ogr-2.png"}/></figure>
-                <h4>Высококачественное покрытие</h4>
-              </div>
-              <div>
-                <figure><img src={CONST.ORIGIN + "/upload/iblock/720/ogr-3.png"}/></figure>
-                <h4>Передовые решения для въездных ворот</h4>
-              </div>
-            </section>
-            <ul>
-              <li>Возможность изготовления в едином стиле с воротами серии ADS400<br/></li>
-              <li>Различные типы монтажа (накладной, встроенный)<br/></li>
-              <li>Широкий ассортимент заполнений (сэндвич-панель, AG77, алюминиевый профиль шириной 87, 82 и 37 мм)<br/></li>
-              <li>Ремонтопригодность<br/></li>
-              <li>Высокая надежность<br/></li>
-              <li>Простой монтаж</li>
-            </ul>
-            <section>
-              <h4 className="primary-colored-text">Преимущества калитки</h4>
-              <p>Для изготовления секций ограждений используется  алюминиевый профиль шириной 68 мм, позволяющий  собрать прочную и надежную конструкцию, которая позволяет  изготавливать секции с максимальными размерами 5000×3210 мм.</p>
-              <p>Дизайн  ограждений ADS400 гармонично сочетается с внешним видом въездных ворот,  позволяя создать единство стиля.</p>
-              <p>Секции заборные серии ADS400 сочетают в себе  традиционно высокое качество, современные технологии, долговечность,  современный дизайн и гарантируют следующие преимущества.</p>
-              <ul>
-                <li>Возможность изготовления в едином стиле с  воротами серии ADS400</li>
-                <li>Различные типы монтажа (накладной, встроенный)</li>
-                <li>Широкий ассортимент заполнений  (сэндвич-панель, AG77, алюминиевый профиль шириной 87, 82 и 37 мм)</li>
-                <li>Ремонтопригодность</li>
-                <li>Высокая надежность</li>
-                <li>Простой монтаж</li>
-            </ul>
-            <p>Конструкция  ограждений предусматривает накладной и встроенный варианты установки. Для более  простого монтажа в базовый комплект входят кронштейны крепления. </p>
-            <p>Стандартная палитра рамы представлена 7  вариантами: RAL9016 белый, RAL8014 коричневый, RAL8017 шоколадный, RAL3004  красный рубин, RAL5010 синий, RAL6005 зеленый мох, RAL9006 серебристый  металлик.</p>
-            <p>По желанию секции ограждения серии ADS400 можно окрасить в любой цвет по шкале RAL (на дополнительных условиях).</p>
-            <p>Разнообразие цветовой гаммы заполнения  позволит с легкостью подобрать цвет конструкции заборных секций, въездных ворот  и калитки, а также создать единство архитектурного стиля вашего дома и&nbsp;окружающей  его оригинально оформленной территории.<strong></strong></p>
-            <p>Конструкция  секций ограждений предусматривает возможность изготовления полотна от  стандартных вариантов до экономичных. В алюминиевую раму можно установить, сэндвич-панель, профиль роликовой прокатки AG/77, алюминиевый профиль, профилированный лист, деревянную доску или любой другой листовой материал.</p>
-            </section>
-            <section>
-              <h4 className="primary-colored-text">Типы заполнений ворот серии ADS400</h4>
-              <p>Ворота серии ADS400 в равной степени будут соответствовать архитектуре как современного дома в стиле <em>hi-tech</em>, так и коттеджа в классическом исполнении.</p>
-              <p>Благодаря различным вариантам рисунков (микроволна, горизонтальный гофр, филенка) и цветам панелей въездные ворота идеально сочетаются с любым отделочным материалом.</p>
-              <div className="sandwich-images">
-                <div className="col_l2 col_m3"> 
-                  <p><b>S-гофр</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/0cd/prom24.jpg'} title="S-гофр" alt="S-гофр" width="159" height="294"/> </div>
-                <div className="col_l2 col_m3"> 
-                  <p><b>M-гофр</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/57b/prom25.jpg'} title="M-гофр" alt="M-гофр" width="159" height="294"/> </div>
-                <div className="col_l2 col_m3"> 
-                  <p><b>L-гофр</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/85f/prom26.jpg'} title="L-гофр" alt="L-гофр" width="159" height="294"/>&nbsp; </div>
-                 &nbsp; 
-                <div className="col_l2 col_m3"> 
-                  <p><b>Микроволна</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/3ea/prom27.jpg'} title="Микроволна" alt="Микроволна" width="159" height="294"/>&nbsp; </div>
-                <div className="col_l2 col_m3"> 
-                  <p><b>Филенка</b></p>
-                 <img src={CONST.ORIGIN + '/upload/medialibrary/51a/prom28.jpg'} title="Филенка" alt="Филенка" width="159" height="294"/> </div>
-              </div>
-              
-              <section>
-                <p>Ворота из  сэндвич-панелей, имитирующих текстуру древесины (золотой дуб, темный дуб,  вишня), обладают всеми преимуществами стальных ворот и придают коттеджу  элементы престижа и индивидуальности.</p>
-              </section>
-
-              <div className="sandwich-images"> 
-                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/a0d/black-sm.jpg'} alt="Тёмный дуб" title="Тёмный дуб" width="245" height="180"/> 
-                 <p><b>Тёмный дуб</b></p>
-                </div>
-                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/f20/chery-sm.jpg'} alt="Тёмная вишня" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
-                 <p><b>Тёмная вишня</b></p>
-                </div>
-                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/a2b/golden-sm.jpg'} alt="Золотой дуб" title="Тёмная вишня" width="245" height="180"/> 
-                 <p><b>Золотой дуб</b></p>
-                </div>
-              </div>
-
-              <section>
-                <h4 className="primary-colored-text">Цветовая  гамма алюминиевых профилей</h4>
-                <p>Алюминиевые  профили имеют глянцевую структуру поверхности и представлены в различных  цветах: от классических белого и коричневого до оригинальных – красный рубин,  зеленый мох, серебристый металлик, шоколадный.</p>
-                <div className="sandwich-images"> 
-                  <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/fcf/color1.jpg'} title="RAL 9016" alt="RAL 9016" width="162" height="118"/> 
-                    <p><b>RAL 9016</b></p>
-                  </div>
-                  <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/bea/color3.jpg'} title="RAL 9006" alt="RAL 9006" width="162" height="118"/>&nbsp; 
-                    <p><b>RAL 9006</b></p>
-                  </div>
-                  <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/6c5/color4.jpg'} title="RAL 6005" alt="RAL 6005" width="162" height="118"/>&nbsp; 
-                    <p><b>RAL 6005</b></p>
-                  </div>
-                  <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/463/color5.jpg'} title="RAL 3004" alt="RAL 3004" width="162" height="118"/>&nbsp; 
-                    <p><b>RAL 3004</b></p>
-                  </div>
-                  <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/d3d/color6.jpg'} title="RAL 5010" alt="RAL 5010" width="162" height="118"/>&nbsp; 
-                    <p><b>RAL 5010</b></p>
-                  </div>
-                  <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/ddf/color7.jpg'} title="RAL 8014" alt="RAL 8014" width="162" height="118"/>&nbsp; 
-                    <p><b>RAL 8014</b></p>
-                  </div>
-                  <div className="col_l2 col_m3 col_pad"> <img src={CONST.ORIGIN + '/upload/medialibrary/195/color8.jpg'} title="RAL 8017" alt="RAL 8017" width="162" height="118"/>&nbsp; 
-                    <p><b>RAL 8017</b></p>
-                  </div>
-                </div>
-              </section>
-            </section>
-          </ExpansionPanel>
         </ExpansionList>
+        <section>
+            <p className="bold-header">Панорамные ворота выпускают и с набором дополнительных элементов и аксессуаров:</p>
+            <hr/>
+            <h4 className="primary-colored-text">Калитка в полотне</h4>
+            <p>Этот вид калитки заказывают, если нужен дополнительный вход в помещение. Ее использование позволяет не только попасть в помещение без открывания ворот, но и сэкономить их ресурс. Опция позволяет пользоваться воротной конструкцией с максимальным комфортом.</p>
+            <p><strong>В ассортименте «Алютех» представлены 3 варианта калиток:</strong></p>
+            <div className="optins-wrapper">
+                <div><img src={CONST.ORIGIN + "/images/product/gate/panoram/kalitka-2.jpg"} /></div>
+                <div>
+                    <p><strong>Со стандартным порогом 145 мм</strong><br/>(для ворот с размерами ширины от 4,5 до 6 м)</p>
+                    <p>- Линейный доводчик;<br/>- Встроенный датчик положения калитки;<br/>- Противодождевой козырек;<br/>- Надежные металлические ручки;<br/>- Специальный ловитель, исключающий провисание створки.</p>
+                </div>
+            </div>
+            <div className="optins-wrapper">
+                <div><img src={CONST.ORIGIN + "/images/product/gate/panoram/kalitka-1.jpg"} /></div>
+                <div>
+                    <p><strong>С низким порогом 100 мм</strong><br/>(для ворот с размерами ширины до 4,5 м)</p>
+                    <p>- Линейный доводчик;<br/>- Встроенный датчик положения калитки;<br/>- Противодождевой козырек;<br/>- Надежные металлические ручки;<br/>- Специальный ловитель, исключающий провисание створки.</p>
+                </div>
+            </div>
+            <div className="optins-wrapper">
+                <div><img src={CONST.ORIGIN + "/images/product/gate/trend/kalitka-03.jpg"} /></div>
+                <div>
+                    <p><strong>С плоским порогом 18 мм</strong><br/>(для ворот с размерами ширины до 5 м)</p>
+                    <p>- Линейный доводчик;<br/>- Встроенный датчик положения калитки;<br/>- Противодождевой козырек;<br/>- Надежные металлические ручки;<br/>- Специальный ловитель, исключающий провисание створки.</p>
+                </div>
+            </div>
+            <p>Обрамление калитки выбирают из двух базовых цветов – коричневого и серебристого. Альтернативные цветовые решения всегда доступны в каталоге RAL. </p>
+            <hr/>
+            <h4 className="primary-colored-text">Решетчатое заполнение</h4>
+            <div className="sandwich-images">
+              <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/opt-001.jpg'} alt="image"/></div>
+              <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/opt-002.jpg'} alt="image"/></div>
+              <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/opt-003.jpg'} alt="image"/></div>
+              <div className="col_l4 col_m6 col_pad quad"><img src={CONST.ORIGIN + '/images/product/gate/panoram/opt-004.jpg'} alt="image"/></div>
+            </div>
+            <p>Для помещений, в которых необходимо постоянное проветривание, отлично подойдут панорамные ворота с решетчатым заполнением. Такое решение будет наиболее востребованно на паркингах. На ваш выбор предлагается три типа решеток: стальная тянутая решетка, стальная решетка, перфорированный алюминиевый лист.</p>
+            <hr/>
+            <h4 className="primary-colored-text">Замок</h4>
+            <div className="addit-info">
+                <div><img src={CONST.ORIGIN + "/images/product/gate/protrend/lock-pro.jpg"} /></div>
+                <div><p>Для запирания ворот в гараже без дополнительного входа необходим замок. В замке реализована возможность подключения устройства разблокировки электропривода.</p></div>
+            </div>    
+            <hr/>
+            <h4 className="primary-colored-text">Боковая дверь</h4>
+            <div className="addit-info">
+                <div><img src={CONST.ORIGIN + "/images/product/gate/panoram/bokovaya-2.jpg"} /></div>
+                <div><p>Боковая дверь и панорамные ворота выполнены в едином стиле и гармонично вписываются в фасад здания, идеально дополняя друг друга.</p></div>
+            </div>    
+            <hr/>
+            <h4 className="primary-colored-text">Защита от взлома</h4>
+            <div className="addit-info">
+                <div><img src={CONST.ORIGIN + "/images/product/gate/protrend/domkrat-01.jpg"} /></div>
+                <div><p>С устройством против поддомкрачивания ворота надежно защищены от злоумышленников. В случае несанкционированного подъема опция заблокирует полотно.</p></div>
+            </div>    
+            <hr/>
+            <h4 className="primary-colored-text">Остекление, стойкое к образованию царапин</h4>
+            <div className="addit-info">
+                <div><img src={CONST.ORIGIN + "/images/product/gate/panoram/carapina.jpg"} /></div>
+                <div><p>Для защиты остекления от возможных повреждений (царапин) в процессе эксплуатации ворот применяется SAN-пластик со специальным антиабразивным покрытием. Данное покрытие сохраняет прозрачность остекления в течение длительного времени даже после многократной чистки. Доступно для двойного остекления 26 мм.</p></div>
+            </div>    
+            <hr/>
+          </section>
 </div>

@@ -4,13 +4,15 @@ import { rollet_reshetki_extended, rollet_reshetki_short } from './items/rolet_r
 import { vorota_garaznye_extended, vorota_garaznye_short } from './items/vorota_garaznye';
 import { promyshlen_vorota_extended, promyshlen_vorota_short } from './items/promyshlen_vorota';
 import { vezdnye_vorota_extended, vezdnye_vorota_short } from './items/vezdnye_vorota';
+import { panoramnye_vorota_extended, panoramnye_vorota_short } from './items/panoramnye_vorota';
 
 
 export const ITEM_DESCR = {
-	rollets_extended, rollets_short,
-	rollet_gates_extended, rollet_gates_short,
-	rollet_reshetki_extended, rollet_reshetki_short,
-	vorota_garaznye_extended, vorota_garaznye_short,
+	rollets_extended,           rollets_short,
+	rollet_gates_extended,      rollet_gates_short,
+	rollet_reshetki_extended,   rollet_reshetki_short,
+	vorota_garaznye_extended,   vorota_garaznye_short,
 	promyshlen_vorota_extended, promyshlen_vorota_short,
-	vezdnye_vorota_extended, vezdnye_vorota_short
+	vezdnye_vorota_extended,    vezdnye_vorota_short,
+	panoramnye_vorota_extended, panoramnye_vorota_short
 }
