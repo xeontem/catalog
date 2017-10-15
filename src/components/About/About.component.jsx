@@ -13,16 +13,15 @@ import stripe from '../../Data/img/stripeBg.gif';
 
 import './about.css';
 
-
-
 export default class About extends Component {
   static propTypes = {
     mobile: PropTypes.bool.isRequired,
-    sliderImages: PropTypes.array.isRequired,
-    imageIndex: PropTypes.number.isRequired,
+    // sliderImages: PropTypes.array.isRequired,
+    // imageIndex: PropTypes.number.isRequired,
     imgSrc: PropTypes.string.isRequired,
     PORTFOLIO: PropTypes.array.isRequired,
-    slider_info: PropTypes.array.isRequired
+    sliderInfo: PropTypes.object.isRequired,
+    nextImg: PropTypes.func.isRequired
   };
 
   showInfo = (e) => {
@@ -36,7 +35,7 @@ export default class About extends Component {
 
   render() {
     setTimeout(() => this.props.nextImg(), 5000);
-    let slider_info = this.props.slider_info[this.props.imageIndex] ? this.props.slider_info[this.props.imageIndex] : this.props.slider_info[0];
+    let sliderInfo = this.props.sliderInfo;//[this.props.imageIndex] ? this.props.sliderInfo[this.props.imageIndex] : this.props.sliderInfo[0];
     return (
       <Paper className="paper">
         <Route path='/roster'/>
@@ -55,12 +54,12 @@ export default class About extends Component {
           <div className="slider-image-placeholder">
             <img className="slider-image" src={this.props.imgSrc}/>
             <div className="info-over-slider">
-              <div className={`info-over-slider-square container ${slider_info.color}`}><span>{slider_info.big}</span><br/>{slider_info.little}</div>
-              <div className="info-over-slider-text container"><span>{slider_info.mainBig}</span>
-                <p>{slider_info.mainLittle}</p>
+              <div className={`info-over-slider-square container ${sliderInfo.color}`}><span>{sliderInfo.big}</span><br/>{sliderInfo.little}</div>
+              <div className="info-over-slider-text container"><span>{sliderInfo.mainBig}</span>
+                <p>{sliderInfo.mainLittle}</p>
               </div>
             </div>
-          </div>  
+          </div>
           <div>
             <Button data-id="0" className="slider-button aluteh-purple-back" flat children="Дилерам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />
             <Button data-id="1" className="slider-button aluteh-orange-back" flat children="Архитекторам" onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo} />

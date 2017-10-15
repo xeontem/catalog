@@ -3,97 +3,97 @@
 
 #expandedInfoCard { 
 
-	// background: $md-background-color !important;
-  	
-	.clear {
-		clear: both;
-	}
+  // background: $md-background-color !important;
+    
+  .clear {
+    clear: both;
+  }
 
-	.centering {
-		margin: 20px 0;
-		padding: 5px;
-	    width: 100%;
-	}
+  .centering {
+    margin: 20px 0;
+    padding: 5px;
+      width: 100%;
+  }
 
-	.image-placeholder {
-		overflow: hidden;
-		float: right;
-		margin: 20px 0;
-		padding: 5px;
-	    width: 100%;
-		img {
-		    width: 100%;
-		}
-	}
+  .image-placeholder {
+    overflow: hidden;
+    float: right;
+    margin: 20px 0;
+    padding: 5px;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+  }
 
-	.flex-list {
-		display: flex;
-		flex-wrap: wrap;
-		div {
-			width: 100%;
-		}
-	}
+  .flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      width: 100%;
+    }
+  }
 
-	.imgs-container {
-		.img {
-			margin: 10px 0;
-			min-width: 300px;
-			width: 30%;
-		  height: 200px;
-		}
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		justify-content: space-around;
-		align-items: center;
-		margin: 15px 0;
-	}
+  .imgs-container {
+    .img {
+      margin: 10px 0;
+      min-width: 300px;
+      width: 30%;
+      height: 200px;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+  }
 
-	h1 {
-		margin: 20px 0 !important;
-	}
+  h1 {
+    margin: 20px 0 !important;
+  }
 
-	h2 {
-		width: 80%;
-		margin: 0px 15px !important;
-		color: white !important;
-		overflow: hidden;
-	}
+  h2 {
+    // width: 80%;
+    margin: 0px 15px !important;
+    color: white !important;
+    overflow: hidden;
+  }
 
-	p {
-		margin: 0 15px;
-	}
+  p {
+    margin: 0 15px;
+  }
 
-	.heading-3 {
-		margin: 15px;
-	    font-size: 16pt;
-		color: $md-primary-color;
-	}
-	
-	a {
-		text-decoration: none;
-		color: $md-primary-color;
-	}
+  .heading-3 {
+    margin: 15px;
+      font-size: 16pt;
+    color: $md-primary-color;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $md-primary-color;
+  }
 
-	.panel-header > div {
-		color: $md-primary-color;
-	}
+  .panel-header > div {
+    color: $md-primary-color;
+  }
 }
 
 .paper-item-expanded {
-	margin: 100px auto;
-	padding: 15px;
-	background: white;
+  margin: 100px auto;
+  padding: 15px;
+  background: white;
 }
 
 .steps-list {
-	list-style-type: decimal;
+  list-style-type: decimal;
 }
 
 .embedded-video {
-	width: 75%;
-	height: 300px;
-	margin: 20px 11%;
+  width: 75%;
+  height: 300px;
+  margin: 20px 11%;
 }
 
 .stripes-container {
@@ -102,55 +102,55 @@
 }
 
 @media screen and (min-width: 1000px) {
-	#expandedInfoCard { 
-		.paper-item-expanded {
-			width: 1000px;
-			margin: 100px auto;
-			padding: 15px;
-		}
-	}
+  #expandedInfoCard { 
+    .paper-item-expanded {
+      width: 1000px;
+      margin: 100px auto;
+      padding: 15px;
+    }
+  }
 
 }
 
 @media screen and (max-width: 800px) {
-	#expandedInfoCard { 
-		.embedded-video {
-			width: 100%;
-			margin: 0;
-		}	
-	}
+  #expandedInfoCard { 
+    .embedded-video {
+      width: 100%;
+      margin: 0;
+    } 
+  }
 }
 
 @media screen and (min-width: 540px) {
-	#expandedInfoCard { 
-		.image-placeholder {
-			float: right;
-			margin: 20px !important;
-			padding: 5px !important;
-		  width: initial !important;
-		  img {
-		  	width: 300px;
-		  }
-		}
+  #expandedInfoCard { 
+    .image-placeholder {
+      float: right;
+      margin: 20px !important;
+      padding: 5px !important;
+      width: initial !important;
+      img {
+        width: 300px;
+      }
+    }
 
-		.flex-list {
-			div {
-				width: 50%;
-			}
-		}
-	}
+    .flex-list {
+      div {
+        width: 50%;
+      }
+    }
+  }
 }
 //----------------------- mobile ---------------------
 #expandedInfoCard { 
-	
-	.expansion-list-mobile {
-		margin: 0;
-		width: 100%;
-	}
+  
+  .expansion-list-mobile {
+    margin: 0;
+    width: 100%;
+  }
 
-	.paper-item-expanded-mobile {
-		margin: 100px 0;
-		padding: 15px 0;
-		background: white;
-	}
+  .paper-item-expanded-mobile {
+    margin: 100px 0;
+    padding: 15px 0;
+    background: white;
+  }
 }

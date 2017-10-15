@@ -241,7 +241,7 @@ export const vezdnye_vorota_extended =
                 <li>Конструкция ворот «АЛЮТЕХ» предусматривает  возможность быстро устранять различного рода повреждения или менять один вид  заполнения на другой, не прибегая к демонтажу конструкции.</li>
               </ul>
               <div className="sandwich-images"> 
-                <div classassName="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_23_thumb.jpg'} alt="petlya" title="Тёмный дуб" width="245" height="180"/> 
+                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_23_thumb.jpg'} alt="petlya" title="Тёмный дуб" width="245" height="180"/> 
                 </div>
                 <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_24_thumb.jpg'} alt="ugolok" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
                 </div>
@@ -381,7 +381,7 @@ export const vezdnye_vorota_extended =
               <p>Петли и ручки для калиток распашных ворот доступны в 6 цветах: RAL8014, RAL3004, RAL9006, RAL6005, RAL9016, RAL8017. Фурнитура вышеперечисленных цветов поставляется клиентам без дополнительной платы.
                  Благодаря разнообразным цветовым решениям петель и ручек для калиток и ворот распашного типа можно добиться стилистического единства всего объекта!</p>
               <div className="sandwich-images"> 
-                <div classassName="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_33_thumb.jpg '} alt="petlya" title="Тёмный дуб" width="245" height="180"/> 
+                <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_33_thumb.jpg '} alt="petlya" title="Тёмный дуб" width="245" height="180"/> 
                 </div>
                 <div className="col_l4 col_m6 col_pad"> <img src={CONST.ORIGIN + '/images/product/gate/vezdnye-vorota/pic_34_thumb.jpg'} alt="ugolok" title="Тёмная вишня" width="245" height="180"/>&nbsp; 
                 </div>

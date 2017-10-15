@@ -1,43 +1,44 @@
+'use strict';
+
 import R from 'ramda';
 import { ABOUT_SLIDER } from '../../Data/about.slider/about.slider';
 import { CONST } from '../../Data/constants';
 import { PORTFOLIO } from '../../Data/portfolio/portfolio';
-// import randomText from '../../services/randomText';
 
-// randomText().then(obj => obj.text_out)
+const debug = val => {
+  console.dir(val);
+  return val;
+};
 
-let initialState = {
+const initialState = {
   mobile: CONST.mobile,
-  sliderImages: ABOUT_SLIDER.images,
-  imageIndex: 0,
-  imgSrc: ABOUT_SLIDER.images[0],
+  currIndex: 4,
+  imgSrc: ABOUT_SLIDER.imgSrc[0],
   PORTFOLIO,
-  slider_info: ABOUT_SLIDER.slider_info
-}
+  sliderInfo: ABOUT_SLIDER.sliderInfo[0]
+};
 
-// const initialState = Immutable.Map(state);
+const compose = f => g => x => f(g(x));
+const succ = ind => ind + 1;
+const check = pred => val => val > pred ? 0 : val;
 
-// const perf = f => {
-//   const start = performance.now();
-//   f
-// }
+const slImgsCheck = check(ABOUT_SLIDER.imgSrc.length - 1);
 
-export default function AboutReducer(state = initialState, action) {
-  switch(action.type){
-  	case "NEXT_IMAGE": {
-    //   let imageIndex = state.get('imageIndex') + 1;
-    //   if(imageIndex > state.get('sliderImages').length - 1) imageIndex = 0;
-    //   let imgSrc = state.get('sliderImages')[imageIndex];
-  		// let newState = state.set('imgSrc', imgSrc).set('imageIndex', imageIndex);
-    // 	return newState;
-    //------------------------------------------------------------
-      let imageIndex = R.view(R.lensProp('imageIndex'), state) + 1;
-      if(imageIndex > R.view(R.lensProp('sliderImages'), state).length - 1) imageIndex = 0;
-      let imgSrc = R.view(R.lensProp('sliderImages'), state)[imageIndex];
-      let newState = R.set(R.lensProp('imgSrc'), imgSrc, state);
-      let newState2 = R.set(R.lensProp('imageIndex'), imageIndex, newState);
-      return newState2; 
-    }
-    default: return state;
-  }
-}
+//--------------- lenses ---------------------------------
+const currIndexLens = R.lensProp('currIndex');
+const currIndexView = obj => R.view(currIndexLens, obj);
+
+const currIndexSetter = val => acc => compose(slImgsCheck)(succ)(currIndexView(acc));
+const imgSrcSetter = val => acc => R.view(R.lensPath([val, currIndexView(acc)]), ABOUT_SLIDER);
+const sliderInfoSetter = imgSrcSetter;
+
+const NEXT_IMAGE_toChange = [
+  {val: 'currIndex', func: currIndexSetter}, 
+  {val: 'imgSrc', func: imgSrcSetter}, 
+  {val: 'sliderInfo', func: sliderInfoSetter}];
+
+export default (state = initialState, action) => 
+  R.cond([
+      [R.always(R.equals('NEXT_IMAGE')),   R.always(NEXT_IMAGE_toChange.reduce((acc, val) => R.set(R.lensProp(val.val), val.func(val.val)(acc), acc), state))],
+      [R.always(R.not(R.equals('NEXT_IMAGE'))), R.always(state)]
+    ])(action.type);
